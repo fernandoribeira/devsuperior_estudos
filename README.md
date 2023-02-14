@@ -1,2 +1,1 @@
-# devsuperior_estudos
-Arquivos relacionados aos cursos da DevSuperior
+# Arquivos relacionados aos cursos da DevSuperior
