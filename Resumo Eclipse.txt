@@ -1,0 +1,51 @@
+- Aumentar tamanho dos icones do Eclipse
+
+	Adicionar ao arquivo Eclipse.ini:
+
+	-Dswt.enable.autoScale=true
+	-Dswt.autoScale=150
+	-Dswt.autoScale.method=nearest
+
+- Configurações Eclipse
+
+	Mudar o layout: menu superior "Window" > "Perspective" > "Open Perspective" > escolher a perspectiva desejada
+
+	Resetar o layout: menu superior "Window" > "Perspective" > "Reset Perspective"
+
+	Mostrar a aba Console: menu superior "Window" > "Show View" > "Console"
+
+	Mudar o tamanho da fonte: "Window" > "Preferences" > "General" > "Appearance" > "Colors and Fonts" > "Basic" > "Text Font" > escolher o tamanho de fonte desejado
+
+- Atalhos de Teclas Eclipse
+
+	Importar classes: "CTRL SHIFT O"
+	
+	Autoendentação: "CTRL SHIFT F"
+
+	Inciar o programa: "CTRL F11"
+
+	Comentar linha ou mais de uma linha com //: "CTRL /"
+
+	Comentario em bloco: "CTRL SHIFT /"
+
+- Atalhos de Codigo Eclipse
+
+	método "main" - main e depois "CTRL Espaço"
+
+	"System.out.println();" - sysout e depois "CTRL Espaço"
+
+	Gerar método construtor - "botão direito" > "Source" > "Generate Constructor using Fields"
+
+	Gerar métodos getters e setters - "botão direito" > "Source" > "Generate Getters and Setters"
+
+- Debug Eclise
+
+	Para marcar uma linha de breakpoint: clicar duas vezes do lado esquerdo do número da linha (irá marcar uma bolinha)
+
+	Para desmarcar uma linha de breakpoint: clicar duas vezes do lado esquerdo na bolinha ao lado do número da linha (irá desmarcar a bolinha)
+
+	Para iniciar o debug: pressionar a tecla "F11"
+
+	Para executar uma linha: pressionar a tecla "F6"
+
+	Para interromper o debug: pressionar as teclas "CTRL F2"
