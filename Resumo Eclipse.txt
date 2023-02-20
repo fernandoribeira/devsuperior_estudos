@@ -20,13 +20,15 @@
 
 	Importar classes: "CTRL SHIFT O"
 	
-	Autoendentação: "CTRL SHIFT F"
+	Autoindentação: "CTRL SHIFT F"
 
 	Inciar o programa: "CTRL F11"
 
 	Comentar linha ou mais de uma linha com //: "CTRL /"
 
 	Comentario em bloco: "CTRL SHIFT /"
+
+	Ir para: "CTRL" + clicar no item que se quer ir, método, atributo ou variável
 
 - Atalhos de Codigo Eclipse
 
