@@ -19,6 +19,8 @@
 - Atalhos de Teclas Eclipse
 
 	Importar classes: "CTRL SHIFT O"
+
+	Fechar todo sos arquivos abertos:  "CTRL SHIFT W"
 	
 	Autoindentação: "CTRL SHIFT F"
 
@@ -29,6 +31,10 @@
 	Comentario em bloco: "CTRL SHIFT /"
 
 	Ir para: "CTRL" + clicar no item que se quer ir, método, atributo ou variável
+
+	Mostrar elementos do código (métodos e variáveis): "CTRL O"
+
+	Apagar uma linha de codigo: "CTRL D"
 
 - Atalhos de Codigo Eclipse
 

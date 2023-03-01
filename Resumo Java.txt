@@ -1,3 +1,4 @@
+
 - Algoritmo
 
 	Sequência finita de instruções para se resolver um problema, aplicando-se a diversas áreas de conhecimento.
@@ -52,7 +53,7 @@
 
 	Funcionalidades de uma IDE:
 
-	Edição de código fonte (indentação, autocompletar, destaque de palavras, etc.)
+	Edição de código fonte (endentação, autocompletar, destaque de palavras, etc.)
 	Depuração e testes
 	Construção do produto final
 	Sugestão de modelos
@@ -82,7 +83,7 @@
 
 - Abordagem híbrida
 
-	cria o código fonte > passa pelo pré-compilador (análise léxica e análise sintática) > que cria o código objeto (Bytecode em Java) > passa pela máquina virtual (que faz a geração de código sob demanda) > que é executado pelo S.O.
+	cria o código fonte > passa pelo pré-compilador (análise léxica e análise sintática) > que cria o código Bytecode > passa pela máquina virtual (que faz a geração de código sob demanda) > que é executado pelo S.O.
 
 	Exemplos de linguagem: Java, C#
 
@@ -91,7 +92,7 @@
 	Compilação
 
 	Vantagens: alta velocidade de execução do programa, auxilio do compilador na checagem do programa
-	Desvantagens: necessidade de compilar para cada S.O., pode ser necessario alterar partes dos códigos dependendo do S.O., precisa ser recompilado caso seja alterado
+	Desvantagens: necessidade de compilar para cada S.O., precisa ser recompilado caso seja alterado
 
 	Interpretação
 
@@ -102,6 +103,14 @@
 
 	Vantagens: não precisa compilar para cada S.O., auxilio do compilador na checagem do programa
 	Desvantagens: média velocidade de execução do programa, precisa ser recompilado caso seja alterado
+
+- Três operações básicas de programação
+
+	Entrada de dados: normalmemnte feita pelo teclado ou mouse
+
+	Processamento de dados: feita pelo processador
+
+	Saída de dados: normalmente feito pelo monitor
 
 - Java
 
@@ -131,10 +140,6 @@
 
     JavaFX: para programação de multimidia
 
-- Java Virtual Machine (JVM)
-
-	Java Virtual Machine ou Máquina Virtual Java é um programa que carrega e executa os aplicativos Java.
-
 - Kits Java
 
 	Java Runtime Environment (JRE): programa a ser instalado para execução de programas Java, possui a máquina virtual Java (JVM).
@@ -153,67 +158,6 @@
 
 	O agrupamento lógico de "module's" relacionadas se chama "application".
 
-- Operadores aritméticos
-
-	+	adição
-	-	subtração
-	*	multiplicação
-	/	divisão
-	%	resto da divisão
-
-	Precedência dos operadores
-
-	* / %
-	+ -
-
-- Agrupamento de expressões
-
-	Utilizamos parênteses ( ) para agrupamento de expressões aritméticas.
-
-- Variáveis
-
-	Em programação, uma variável é uma porção de memória (RAM) utilizada para armazenar dados durante a execução dos programas.
-
-	Declaração sem atribuir valor:
-
-	<tipo> <nome>;
-
-	Declaração atribuindo valor:
-
-	<tipo> <nome> = <valor inicial>;
-
-	Regras para nomes de variáveis:
-
-	Não pode começar com dígito
-	Não pode ter espaço em branco
-	Não usar acentos
-	Use nomes que tenham significado / relação com o que a variável representa
-	Use o padrão "CamelCase", em específico o "lowerCamelCase" (de letra inicial minúscula)
-
-- Inicialização de variaveis
-	
-	Por padrão as variaveis de métodos não são inicializadas, devem ser inicializadas manualmente antes do uso caso contrario será apresentado erro.
-
-	Por padrão as variaveis de classes (atributos)  são inicializadas automaticamente com valores padrão conforme tabela abaixo.
-
-	Tipo		Valor padrão
-
-	byte		0
-	short		0
-	int			0
-	long		0L
-	float		0.0f
-	double		0.0d
-	char		'\u0000'
-	String 		null
-	boolean		false
-
-- Escopo
-
-	O escopo é a vida de uma variável em Java, tratando-se dos locais nos quais ela pode ser acessada. Em Java, o escopo de variáveis vai de acordo com o bloco onde ela foi declarada. A variável é criada no primeiro acesso a ela e destruída após o interpretador sair do bloco de execução ao qual ela pertence.
-
-	Um bloco é determinado por chaves { } .
-
 - Convenções de nomes em Java
 
 	Lower Camel Case ("lastName" por exemplo):
@@ -226,6 +170,64 @@
 	Pascal Case ("UserAccount" por exemplo):
 
 	classes
+
+- Comentários
+
+	Comentários em programas Java são códigos dentro dos programas que não serão executados mas server para dar informações relativas ao código.
+
+	Exemplo:
+
+	// Comentario de uma linha
+
+	/*
+	 * Comentário 
+	 * de
+	 * bloco
+	 */
+
+- Comentários / Documentação Javadoc
+
+	Comentários Javadoc são comentários que documentam o código especifica.
+
+	Exemplo:
+
+	/**
+	 * 
+	 * @author Fernando
+	 *
+	 */
+
+	Podemos gerar comentários, de varios itens, declaração de classes, métodos construtores, métodos comuns, para isso basta criar o comentário em cima d item que deseja documentar.
+
+	Para dar detalhes utilizamos anotações com "@", segue a lista:
+
+	@author (classes e interfaces)
+	@version (classes e interfaces)
+	@param (metodos e construtores)
+	@return (metodos)
+	@throws (exceçoes)
+
+	Para gerar a documentação no Eclipse bast air no menu "Project" > "Generate Javadoc" e seguir os passos.
+
+- Variáveis
+
+	Em programação, uma variável é uma porção de memória (RAM) utilizada para armazenar dados durante a execução dos programas.
+
+	Declaração sem atribuir valor:
+
+	<tipo> <nome>;
+
+	Declaração atribuirdo valor:
+
+	<tipo> <nome> = <valor inicial>;
+
+	Regras para nomes de variáveis:
+
+	Não pode começar com dígito
+	Não pode ter espaço em branco
+	Não usar acentos
+	Use nomes que tenham significado / relação com o que a variável representa
+	Use o padrão "CamelCase", em específico o "lowerCamelCase" (de letra inicial minúscula)
 
 - Tipos primitivos em Java
 
@@ -291,25 +293,34 @@
 
 	Locale.setDefault(Locale.US);
 
-- Comentários
+- Operadores aritméticos
 
-	Comentários em programas Java são códigos dentro dos programas que não serão executados mas server para dar informações relativas ao código.
+	+	adição
+	-	subtração
+	*	multiplicação
+	/	divisão
+	%	resto da divisão
 
-	Exemplo:
+	Precedência dos operadores
 
-	// Comentario de uma linha
+	* / %
+	+ -
 
-	/*
-	 * Comentário 
-	 * de
-	 * bloco
-	 */
+	Agrupamento de expressões
 
-	/**
-	 * Comentário 
-	 * de
-	 * bloco JavaDoc
-	 */
+	Utilizamos parênteses ( ) para agrupamento de expressões aritméticas.
+
+- Operadores de atribuição acumulativa
+
+	Usados como forma abreviada de escrever que uma variável recebe o valor dela em uma operação onde ela esta envolvida.
+
+	Operador 		Exemplo de uso
+
+	+= 				a = a + b;
+	-= 				a = a - b;
+	*= 				a = a * b;
+	/= 				a = a / b;
+	%= 				a = a % b;
 
 - Casting
 
@@ -319,7 +330,7 @@
 
 	Uso:
 
-	A conversão implicita (automatica) não precisa de intervenção alguma.
+	A conversão implcita (automatica) não precisa de intervenção alguma.
 
 	A conversão explicita (forçada) é feita colocando o tipo desejado em frente ao valor a ser convertido "(<tipo desejado>) <valor a ser convertido>".
 
@@ -372,14 +383,6 @@
 
 	Solução: Faça um "nextLine()" extra antes de fazer o "nextLine()" de seu interesse.
 
-- Três operações básicas de programação
-
-	Entrada de dados: normalmente feita pelo teclado ou mouse
-
-	Processamento de dados: feita pelo processador
-
-	Saída de dados: normalmente feito pelo monitor
-
 - Funções matemáticas
 
 	Existem algumas funções já pré-definidas em Java, elas fazem parte da classe "Math", seguem exemplos:
@@ -390,23 +393,11 @@
 	Math.pow(<valor x>, <valor y>); 		resultado de x elevado a y
 	Math.abs(<valor x>); 					resultado da valor absoluto de x
 
-	A classe Math também ja fornece o valor de PI como uma variável:
+	A classe Math tanbém ja fornece o valor de PI como uma variável:
 
 	Math.PI
 
 	Existem diversas outras funções já prontas, basta verificar a documentação da classe "java.lang.Math".
-
-- Operadores de atribuição acumulativa
-
-	Usados como forma abreviada de escrever que uma variável recebe o valor dela em uma operação onde ela esta envolvida.
-
-	Operador 		Exemplo de uso
-
-	+= 				a = a + b;
-	-= 				a = a - b;
-	*= 				a = a * b;
-	/= 				a = a / b;
-	%= 				a = a % b;
 
 - Operadores comparativos
 
@@ -443,7 +434,7 @@
 			<comandos a serem executados caso a condição acima seja falsa>
 		}
 
-	if...else else...if (aninhada)
+	if...else if...else (aninhada)
 
 		if (<condição>) {
 			<comandos a serem executados caso a condição acima seja verdadeira>
@@ -473,7 +464,7 @@
 
 	operador ternário ? (seleção dupla)
 
-		<variavel que irá receber o valor> = (<condição>) ? <valor se verdadeiro> : <valor se falso>;
+	(<condição>) ? <valor se verdadeiro> : <valor se falso>;
 
 - Estruturas de repetição
 
@@ -511,7 +502,49 @@
 	| 					Operação "OU" bit a bit
 	^ 					Operação "OU-exclusivo" bit a bit
 
+- Pacote "java.lang"
+
+	O pacote java.lang contém as classes que constituem recursos básicos da linguagem, necessários à execução de qualquer programa Java, ele é automaticamente importado pelo Java, dispensando a importação mnaual pelo usuário.
+
+	Entre as classes desse pacote destacam-se:
+
+	Object: expressa o conjunto de funcionalidades comuns a todos os objetos Java
+	String e StringBuffer: permite a representação e a manipulação de strings, fixos ou modificáveis
+	Math: contém a definição de métodos para cálculo de funções matemáticas
+	Boolean, Character, Byte, Short, Integer, Long, Float, Double: classes wrappers, permitindo a manipulação de valores dos tipos literais da linguagem como se fossem objetos
+	System, Runtime e Process: são classes que permitem interação da aplicação com o ambiente de execução
+	Thread, Runnable, ThreadGroup: classes que dão suporte à execução de múltiplas linhas de execução
+	Throwable, Error e Exception: classes que permitem a definição e manipulação de situações de erros e condições inesperadas de execução
+
+- Classe System
+
+	Explicando o comando "System.out.print()":
+
+	"System" - é uma classe do pacote java.lang, de acesso publico
+	"out" - é um atributo, publico, estatico, de uma referencia
+	"print" - é um método, publico, não estatico, com sobrecargas e que não dispara nenhuma exceção do tipo checked
+
+- Classe String
+
+	String é uma classe em Java do pacote "java.lang", elas são utilziadas para guardar palavras / textos.
+
+	Variáveis do tipo String guardam referências a objetos, e não um valor, como acontece com os tipos primitivos.
+
+	Variáveis do tipo String são imutáveis, ao alterar um String na verdade é gerada uma nova e a referencia alterada.
+
+	Podemos criar uma String:
+
+	Utilizando o new (que não é utilizado devido a problemas de otimização e a não atende ro padrão):
+
+	String <nome da variavel> = new String("<valor da variavel>");
+
+	E utilizando o padrão "object literal" similar a declaração de uma variavel de tipo primitivo (padrão utilizado):
+
+	String <nome da variavel> = "<valor da variavel>";
+
 - Funções para String
+
+	Um objeto String possui muitos métodos já disponiveis para utilização, entre eles:
 
 	toLowerCase() - passa a String para lowercase
 	toUpperCase() - passa a String para uppercase
@@ -601,13 +634,19 @@
 
 	Usualmente, são colocadas em um package classes relacionadas, construídas com um propósito comum para promover a reutilização de código.
 
-	Deve ser declarado a primeira linha da classe.
+	Deve ser declarado na primeira linha da classe.
 
 	Exemplo:
 
 		package <nome do pacote>;
 
 		package entities;
+
+	É utilização do como padrão de nome o seguinte formato:
+
+		<FQN (Full Qualified Name) invertido da empresa>.<nome do projeto>.<demais packages do projeto>
+
+		br.com.fernandoribeira.bytebank.model
 
 	Sugestão de pacotes
 
@@ -624,13 +663,13 @@
 
 	Para isso basta inserir a declaração "import" após a declaração "package" da classe, exemplo:
 
-	import <caminho fqdn da classe>;
+	import <caminho fqn da classe>;
 
 	import java.util.Locale;
 
 - Modificadores de acesso
 
-	Temos quatro modificadores de acesso básicos da linguagem Java: public, private, protected e default.
+	Temos quatro modificadores de acesso básicos da linguagem Java: public, private, protected e default (package private).
 
 	Eles servem para tornar componentes da sua aplicação mais ou menos acessíveis por outras partes do seu programa.
 
@@ -642,7 +681,7 @@
 
 		protected: o membro só pode ser acessado no mesmo pacote, bem como em subclasses de pacotes diferentes
 
-		(default): o membro só pode ser acessado nas classes do mesmo pacote		
+		default (package private): o membro só pode ser acessado nas classes do mesmo pacote		
 
 	Detalhes dos modificadores:
 
@@ -683,7 +722,7 @@
 	    Métodos
 	    Atributos
 
-	"default":
+	"default (package private)"
 
 	Restringe o acesso ao item sob o modificador deixando-o visível somente para as classes que se encontram sob o mesmo pacote da classe que possui o item. Em uma herança a restrição de acesso atinge também as classes filhas que não estejam no mesmo pacote, impedindo-as de acessarem o item sob o modificador default.
 
@@ -729,14 +768,14 @@
 
 - Referência "this"
 
-	É uma referencia para o proprio objeto.
+	É uma referenci apara o proprio objeto.
 
 	Usos comuns:
 
 	Diferenciar atributos de variáveis locais
 	Passar o próprio objeto como argumento na chamada de um método ou construtor
 
-	Por exemplo, caso algum atributo tenha o mesmo nome de um parâmetro de método (normalmente no método construtor) podemos referenciar o atributo do objeto com a palavra "this" antes do atributo ao utilizar o mesmo.
+	Por exemplo, caso algum atributo tenha o mesmo nome de um parâmetro de método  (normalmente no método construtor) podemos referenciar o atributo do objeto com a palavra "this" antes do atributo ao utilizar o mesmo.
 
 	Exemplo:
 
@@ -797,7 +836,7 @@
 
 	Desta forma um objeto é como se fosse a casa construida a partir da planta.
 
-	A classe tem a descrição do que o objeto possui e faz, mas é somente um projeto, para utilizarmos a classe criamos objetos baseados nela.
+	A classe tem a descrição do que o objeto possui e faz, mas é somente um projeto, para utilizarmos a classe criamos onjetos baseados nela.
 
 - Declaração e instanciação de um objeto
 
@@ -811,21 +850,118 @@
 
 	Triangulo t;
 
-	Ela cria na memória (stack) uma variável com conteúdo vazio.
+	Ela cria na memória uma variável com conteúdo vazio.
 
-	Instanciar é o ato de criar o objeto na memória (heap)e inserir seu endereço dentro da variavel criada anteriormente.
+	Instanciar é o ato de criar o objeto na memória e inserir seu endereço dentro da variavel criada anteriormente.
 
 	Exemplo:
 
-	<nome do objeto> = new <nome da classe>(<parametros se necessario):
+	<nome do objeto> = new <nome da classe>(<paramentros se necessario):
 
 	t = new Triangulo(2.00, 3.00, 5.00);
 
-	Uma variavel do tipo comum (primitiva) guarda dentro dela o valor propriamente dito, ja uma variavel do tipo objeto guarda um valor de endereço de memoria que redireciona a variavel (como um link ou ponteiro) ao local onde os dados efetivamente estao.
+	Uma variavel do tipo comum (primitiva) guarda dentro dela o valor propriamente dito, ja uma variavel do tipo objeto guarda um valor de enderço de memoria que redireciona a variavel (como um link ou ponteiro) ao local onde os dados efetivamente estao.
+
+- Linguagem UML
+
+	A Linguagem de Modelagem Unificada (UML) foi criada para estabelecer uma linguagem de modelagem visual comum, semanticamente e sintaticamente rica, para arquitetura, design e implementação de sistemas de software complexos, tanto estruturalmente quanto para comportamentos.
+
+	A UML não é uma linguagem de programação, ela mostra as classes (com seus atributos e métodos) e seus relacionamentos com outras classes, tudo em forma de desenho.
+
+	Podemos dizer que a UML mostra o projeto da classe ou diagrama de classes.
+
+- Diagrama de classe UML
+
+	-------------------------
+	| <nome da classe>      |
+	-------------------------
+	| <atributos da classe> |
+	-------------------------
+	| <métodos da classe>   |
+	-------------------------
+
+	Exemplo:
+
+	-----------------------------------------
+	|               Triangle                |
+	-----------------------------------------
+	| - A: double                           |
+	| - B: double                           |
+	| - C: double                           |
+	-----------------------------------------
+	| + area(X: double, Y: double): double  |
+	-----------------------------------------
+
+	Detalhes:
+
+	O nome da classe é escrito em negrito e com alinhamento centralizado.
+
+	Temos modificadores de acesso igual ao Java:
+
+	"-" para private
+	"#" para protected
+	"+" para public
+	"~" para default
+
+	Os atributos possuem alinhamento a esquerda na seguinte estrutura:
+
+	"<modificador de acesso> <nome da variavel>: <tipo da variavel>"
+
+	Os métodos possuem alinhamento a esquerda na seguinte estrutura:
+
+	"<modificador de acesso> <nome do método>(<nome do parametro>: <tipo do parametro>): <tipo da variavel de retorno>"
+
+- Diagrama UML para ENUM
+
+	-------------------------
+	| <<enum>>              |
+	| <nome da enum>        |
+	-------------------------
+	| <constantes da enum>  |
+	-------------------------
+	|                       |
+	-------------------------
+
+	Exemplo:
+
+	-----------------------------------------
+	|               <<enum>>                |
+	|              OrderStatus              |
+	-----------------------------------------
+	| - PENDING_PAYMENT: int = 0            |
+	| - PROCESSING: int = 1                 |
+	| - DELIVERED: int = 2                  |
+	-----------------------------------------
+	|                                       |
+	-----------------------------------------
+
+	Detalhes:
+
+	Inicialmente colocamos a descrição "<<enum>>"
+
+	O nome da enum é escrito em negrito e com alinhamento centralizado.
+
+	É utiliado o indicador "private" para cada constante.
+
+	As constantes possuem alinhamento a esquerda na seguinte estrutura:
+
+	"<modificador de acesso> <nome da constante em maiusculo>: int = <valor de posição>"
+
+- Conectores UML
+
+	Associação (conector sem pontas) - É um tipo de relacionamento usado entre classes. Aplicável a classes que são independentes (vivem sem dependência umas das outras), mas que em algum momento no ciclo de vida do software (enquanto ele está em execução) podem ter alguma relação conceitual.
+
+	Herança (conector com seta em uma das pontas) - É um tipo de relacionamento onde a classe generalizada (onde a "ponta da seta" do conector fica) fornece recursos para a classe especializada (herdeira). Excetuando conceitos mais avançados (como padrões de projeto, interfaces, visibilidades específicas etc.), tudo que a classe mãe (generalizada) tem, a filha (especializada) terá.
+
+	Composição (conector com um "diamante" hachurado na ponta) - É um tipo de relacionamento onde a classe composta depende de outras classes para "existir". Por exemplo, a classe "CorpoHumano" possui um composição com a classe "Coracao". Sem a classe "Coracao", a classe "CorpoHumano" não pode existir.
+
+	Agregação (conector com um "diamante" vazado na ponta) - É um tipo de relacionamento onde a classe agregada usa outra classes para "existir", mas pode viver sem ela. Por exemplo, a classe "CorpoHumano" possui uma agregação com a classe "Mao". Sem a "Mao" a classe "CorpoHumano" pode existir.
 
 - Classe "Object"
 
-	Toda classe em Java é uma subclasse da classe "Object".
+	Object é a raiz da hierarquia de classes do Java, a superclasse de todas as classes, direta ou indiretamente.
+
+	Sendo a base para todas as classes, Object define alguns comportamentos comuns que todos objetos devem ter.
 
 	Object possui os seguintes métodos:
 
@@ -854,7 +990,7 @@
 
 	@Override
 	public String toString() {
-		return <dados a serem exibidos do objeto>;
+		return <dados a serem exibidos do objeto>
 	}
 
 	Exemplo:
@@ -880,7 +1016,7 @@
 
 	Uma classe possui membros, esses membros são os atributos e os métodos.
 
-	Ao criar e instanciar um objeto cada um irá possuir uma cópia (instancia) dos membros, estes membros são chamados de "membro de intancia" ou "membros de objeto".
+	Ao criar e instanciar um objeto cada um irá possuir uma cópia (instancia) dos membros, estes membros são chamados de "membro de intancia" ou "menbros de objeto".
 
 	Cada objeto conhece somente os seus membros, membros de outros objetos (mesmo sendo da mesma classe) não são conhecidos.
 
@@ -892,7 +1028,7 @@
 
 	Exemplo:
 
-	Math.sqrt();
+	Math.sqrt
 
 	Não precisamos instanciar um objeto da classe Math para utiliza-la, basta chamamos seus métodos de forma direta.
 
@@ -926,7 +1062,7 @@
 
 - Constantes
 
-	Uma constante é um tipo especial de variável cujo valor, uma vez definido, não pode mais ser alterado durante a execução do programa.
+	Uma constante é um tipo especial de variável cujo valor, uma vez definido no código, não pode mais ser alterado durante a execução do programa.
 
 	Declaramos uma constante em Java usando a palavra-chave final.
 	
@@ -1053,7 +1189,7 @@
 
 - Área de memória Heap e Stack
 
-	O sistema operacional ao carregar um programa na memória disponibiliza ao programa um espaço de endereçamento, esse espaço é a memória disponível para aquele programa.
+	O sistema operacional ao carregar um programa na memória  disponibiliza ao programa um espaço de endereçamento, esse espaço é a memória disponível para aquele programa.
 
 	O Heap, ou área de alocação dinâmica, é um espaço reservado para variáveis e dados criados durante a execução do programa. Vamos dizer que o Heap é a memória global do programa.
 
@@ -1089,15 +1225,21 @@
 
 	A desalocação por escopo é feita assim que o escopo onde a variável foi criada é encerrado, pode ser um método, uma estrutura de repetição ou de seleção. Funciona para tipos valor (primitivos).
 
-- Vetor (array)
+- Array
 
-	Vetor (array) é o nome dado a arranjos unidimensionais.
+	Um array é uma estrutura de dados homogênea (dados do mesmo tipo) e serve para guardar elementos (valores primitivos ou referências).
 
-	Vetor é uma estrutura de dados:
+	Arrays usam colchetes ([]) sintaticamente.
 
-		Homogênea (dados do mesmo tipo)
-		Ordenada (elementos acessados por meio de posições)
-		Alocada de uma vez só, em um bloco contíguo de memória
+	Arrays têm um tamanho fixo, alocada de uma vez só, em um bloco contíguo de memória
+
+	Um array também é um objeto (tipo referencia).
+
+	Arrays são zero-based (o primeiro elemento se encontra na posição 0), seus elementos acessados por meio de posições
+
+	Um array é sempre inicializado com os valores padrões (devido a ser um objeto).
+
+	Ao acessar uma posição inválida recebemos a exceção ArrayIndexOutOfBoundException
 
 	Vantagens:
 
@@ -1110,25 +1252,288 @@
 
 	Declaração:
 
-		<tipo do vetor>[] <nome da variavel>;
+		<tipo do array>[] <nome da variavel>;
 
 		double[] number;
 
 	Instanciação:
 
-		<nome da variavel> = new <tipo do vetor>[<tamanho do vetor>];
+		<nome da variavel> = new <tipo do array>[<tamanho do array>];
 
 		number = new double[3];
 
 	Declaração e instanciação na mesma linha:
 
-		<tipo do vetor>[] <nome da variavel> = new <tipo do vetor>[<tamanho do vetor>];
+		<tipo do array>[] <nome da variavel> = new <tipo do array>[<tamanho do array>];
 
 		double[] number = new double[3];
 
-	Atributos de um vetor:
+	Declaração de forma literal (declarando e ja atribuindo valores):
 
-		length - mostra o tamanho do vetor
+		<tipo do array>[] <nome da variavel> = {<itens do array>};
+
+		double[] number = {3.25, 4.10m 5.01};
+
+	Atributos de um array:
+
+		length - mostra o tamanho do array
+
+- Parametro "args"
+
+	No método main temos a seguinte linha:
+
+	public static void main(String[] args) {
+
+	Temos um array de String chamado "args", o mesmo é acessivel dentro do método main, segue exemplo:
+
+	public class Teste {
+		public static void main(String[] args) {
+			
+			System.out.print("Ola");
+			for (int i = 0; i < args.length; i++) {
+				System.out.print(" " + args[i]);
+			}
+			
+		}
+	}
+
+	Normalmente este array é utilizado para passar parametros a serem utilziados na execuçãod e programas Java em linha de comando.
+
+- Boxing, unboxing e wrapper classes
+
+	Boxing
+
+		É o processo de conversão de um objeto tipo valor (primitivo) para um objeto tipo referência compatível, exemplo:
+
+		int x = 20;
+		Object obj = x;
+
+	Unboxing:
+
+		É o processo de conversão de um objeto tipo referência para um objeto tipo valor compatível, exemplo:
+
+		int x = 20;
+		Object obj = x;
+		int y = (int) obj;
+
+		O processo de Boxing é feito de forma implicita, já o processo de Unboxing é feito de forma explicita (com casting).
+
+	Wrapper classes
+
+		Para facilitar o processo de Boxing e Unboxing foram criadas as wrapper classes, elas são classes equivalentes aos tipos primitivos, segue tabela:
+
+		Tipo primitivo 			Wrapper classes
+
+		byte					Byte
+		short					Short
+		int						Integer
+		long					Long
+		float					Float
+		double					Double
+		char					Character
+		boolean					Boolean
+
+		Uso comum: campos de entidades em sistemas de informação, pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO. Inserção em listas pois elas não aceitam numeros primitivos.
+
+		Atributos de classes devem ser declarados como Wrapper classes para boa prática, exemplo:
+
+		public class Product {
+			private String name;
+			private Double price;
+			private Integer quantity;
+			(...)
+
+		A wrappers classes podem ser utilizadas como se fosse um tipo primitivo normalmente, inclusive em calculos, exemplo:
+
+		Integer x = 10;
+		int y = x * 2;
+
+		As classes wrappers possuem dois construtores, um recebendo um valor primitivo (ou variavel) outro que recebe uma String, eles nao devem ser declarado com "new" e sim com um método estatico da classe, exemplo:
+
+		Integer idade = Integer(25);
+		Integer idade = Integer(variavelPrimitiva);
+		Integer idade = Integer(variavelString);
+
+		A wrapper classe possuem diversas métodos de instancia, exemplos da classe Integer porem poode ser aplciados as outras classes:
+
+		byteValue() - Retorna o valor deste Integer como um byte após uma conversão primitiva de estreitamento.
+		compareTo(Integer anotherInteger) - Compara dois objetos Integer numericamente.
+		doubleValue() - Retorna o valor deste Integer como um duplo após uma conversão primitiva de alargamento.
+		equals(Object obj) - Compara este objeto com o objeto especificado.
+		floatValue() - Retorna o valor deste Integer como um float após uma conversão primitiva de alargamento.
+		hashCode() - Retorna um código hash para este Integer.
+		intValue() - Retorna o valor deste Integer como um int.
+		longValue() - Retorna o valor deste Integer como um longo após uma conversão primitiva de alargamento.
+		shortValue() - Retorna o valor deste Integer como um curto após uma conversão primitiva de estreitamento.
+		toString() - Retorna um objeto String representando o valor deste Integer.
+
+		A wrapper classe possuem diversas métodos de classe, exemplos da classe Integer porem poode ser aplciados as outras classes:
+
+		compare(int x, int y) - Compara dois valores int numericamente.
+		max(int a, int b) - Retorna o maior de dois valores int como se chamasse Math.max.
+		min(int a, int b) - Retorna o menor de dois valores int como se chamasse Math.min.
+		parseInt(String s) - Analisa o argumento de string como um inteiro decimal com sinal.
+		valueOf(int i) - Retorna uma instância Integer representando o valor int especificado.
+		valueOf(String s) - Retorna um objeto Integer contendo o valor da String especificada.
+
+		A wrapper classe possuem diversas propriedades, exemplo:
+
+		.MIN_VALUE - retorna o valor minimo permitido
+		.MAX_VALUE - retorna o valor maximo permitido
+		.BYTES - retorna a quantidade de bytes que o objeto ocupa
+
+		As classes wrappers seguem esta estrutura e herança e interfaces:
+
+		java.lang.Object
+			java.lang.Number
+				java.lang.Integer
+
+		All Implemented Interfaces: Serializable, Comparable<Integer>
+
+- Laço "for each"
+
+	Sintaxe opcional e simplificada para percorrer coleções.
+
+	Ela serve somente para exibição, não serve para modificar os valores dos itens das coleções.
+
+	Sintaxe:
+
+	for (<tipo da coleção> <variavel interna do laço> : <variavel da coleção>) {
+		<comandos a serem executados>
+	}
+
+	Exemplo:
+
+	String[] vect = new String[] {"Bolacha", "Minhoca", "Gabriel"};
+	
+	for (String nome : vect) {
+		System.out.println(nome);
+	}
+
+	Temos tambem a opção especifica com lambda para listas, exemplo:
+
+	lista.forEach((conta) -> System.out.println(conta.getNumero()));
+
+	Esta é uma forma muito mais concisa para iterar em uma lista.
+
+- Pacote "java.util"
+
+	O pacote java.util contém as interfaces e classes que fornecem listas a serem utilizadas no Java assim como classe de data e entrada de dados.
+
+	Entre as interfaces desse pacote destacam-se:
+
+	Collection<E> - A interface raiz na hierarquia da coleção
+	Comparator<T> - Uma função de comparação, que impõe uma ordenação total em alguma coleção de objetos
+	Iterator<E> - Um iterador sobre uma coleção
+	List<E> - Uma coleção ordenada (também conhecida como sequência)
+	Map<K,V> - Um objeto que mapeia chaves para valores
+	Observer - Uma classe pode implementar a interface Observer quando deseja ser informada sobre alterações em objetos observáveis
+	Set<E> - Uma coleção que não contém elementos duplicados
+
+	Entre as classes desse pacote destacam-se:
+
+	ArrayList<E> - Implementação de array redimensionável da interface List.
+	Arrays - Esta classe contém vários métodos para manipular arrays (como classificação e pesquisa).
+	Base64 - Esta classe consiste exclusivamente em métodos estáticos para obter codificadores e decodificadores para o esquema de codificação Base64.
+	Calendar - A classe Calendar é uma classe abstrata que fornece métodos para converter entre um instante específico no tempo e um conjunto de campos de calendário como YEAR, MONTH, DAY_OF_MONTH, HOUR e assim por diante, e para manipular os campos de calendário, como obter a data da próxima semana.
+	Collections - Esta classe consiste exclusivamente em métodos estáticos que operam ou retornam coleções.
+	Currency - Representa uma moeda.
+	Date - A classe Date representa um instante específico no tempo, com precisão de milissegundos.
+	HashMap<K,V> - Implementação baseada em tabela hash da interface Map.
+	HashSet<E> - Esta classe implementa a interface Set, apoiada por uma tabela de hash (na verdade, uma instância de HashMap).
+	LinkedList<E> - Implementação de lista duplamente vinculada das interfaces List e Deque.
+	Random - Uma instância dessa classe é usada para gerar um fluxo de números pseudo-aleatórios.
+	Scanner - Um scanner de texto simples que pode analisar tipos primitivos e strings usando expressões regulares.
+	Vector<E> - A classe Vector implementa uma matriz expansível de objetos.
+
+- Listas
+
+	Lista é uma estrutura de dados:
+
+		Homogênea (elementos do mesmo tipo)
+		Ordenada (elementos ficam um apos o outro)
+		Inicia vazia, e seus elementos são alocados sob demanda (dinamica)
+		Cada elemento ocupa um "nó" da lista
+		Não aceita tipos primitivos, somente classes
+		Aceita elementos duplicados (inserir o mesmo elemento mais de uma vez)
+
+	Seu tipo é o "List".
+
+	Podemos declarar um tipo como "List" porem não podemos instanciar devido a ser uma interface, a instanciação deve ser feita em uma de suas implementações.
+
+	Seguem algumas classes que implementam "List":
+
+		AbstractList, AbstractSequentialList, ArrayList, AttributeList, CopyOnWriteArrayList, FilteredList, LinkedList, ListBinding, ListExpression, ListProperty, ListPropertyBase, ModifiableObservableListBase, ObservableListBase, ReadOnlyListProperty, ReadOnlyListPropertyBase, ReadOnlyListWrapper, RoleList, RoleUnresolvedList, SimpleListProperty, SortedList, Stack, TransformationList, Vector
+
+	As mais utilizadas são ArrayList, LinkedList e Vector.
+
+	Dependendo da implementação temos vantagens e desvantagens, por exemplo:
+
+	ArrayList
+
+	Funcionamento:
+		Lista baseada internamente em um array
+	Vantagens:
+		Tamanho variável
+		Facilidade para encontrar um elemento por sua posição
+	Desvantagens:
+		Dificuldade para se realizar inserções e deleções
+
+	LinkedList
+
+	Funcionamento:
+		Lista dupla encadeada, cada elemento tem dois campos que falam qual é o elemento anterior e qual é o proximo
+	Vantagens:
+		Tamanho variável
+		Facilidade para se realizar inserções e deleções em qualquer nó
+	Desvantagens:
+		Para encontrar um elemento tem que percorrer toda a lista
+
+	Vector
+
+	Funcionamento:
+		Lista baseada internamente em um array
+		Thread safe
+	Vantagens:
+		Tamanho variável
+		Facilidade para encontrar um elemento por sua posição
+	Desvantagens:
+		Dificuldade para se realizar inserções e deleções
+		Custo de performance devido ao thread safe
+
+	Declaração:
+
+		List<tipo a ser guardado> <nome da lista> = new <implementação da lista><tipo a ser guardado>();
+
+		List<String> list = new ArrayList<String>();
+
+		Tambem podemos declarar omitindo o tipo ao final:
+
+		List<tipo a ser guardado> <nome da lista> = new <implementação da lista><>();
+
+		List<String> list = new ArrayList<>();
+
+		Ou declarar o tipo exato da lista:
+
+		ArrayList<tipo a ser guardado> <nome da lista> = new <implementação da lista><tipo a ser guardado>();
+
+		ArrayList<String> list = new ArrayList<String>();
+
+	Métodos:
+
+		add(<elemento>) - adicionar elemento no final da lista
+		add(<posição>, <elemento>) - adicionar elemento na posição desejada
+		clear() - limpa a lista
+		contains(<elemento>) - returna true se o elemento esta na lista
+		equals(<elemento>) - compara objeto com a lista
+		get(<posição>) - obter o elemento da posição
+		hashCode() - retorna o hashcode da lista
+		indexOf(<elemento>) - busca o primeiro elemento na lista com o valor desejado
+		isEmpty() - returna true se a lista estiver vazia
+		lastIndexOf(<elemento>) - busca o ultimo elemento na lista com o valor desejado
+		remove(<elemento ou posição>) - remover elemento da lista
+		size() - mostra o tamanho da lista
+		toArray() - retorna um Array com todos os elementos da lista
 
 - Matrizes
 
@@ -1171,535 +1576,7 @@
 
 		length - mostra o tamanho de linhas ou colunas da matriz
 
-
-- Laço "for each"
-
-	Sintaxe opcional e simplificada para percorrer coleções.
-
-	Ela serve somente para exibição, não serve para modificar os valores dos itens das coleções.
-
-	Sintaxe:
-
-	for (<tipo da coleção> <variavel interna do laço> : <variavel da coleção>) {
-		<comandos a serem executados>
-	}
-
-	Exemplo:
-
-	String[] vect = new String[] {"Bolacha", "Minhoca", "Gabriel"};
-	
-	for (String nome : vect) {
-		System.out.println(nome);
-	}
-
-- Boxing, unboxing e wrapper classes
-
-	Boxing
-
-		É o processo de conversão de um objeto tipo valor (primitivo) para um objeto tipo objeto compatível, exemplo:
-
-		int x = 20;
-		Object obj = x;
-
-	Unboxing:
-
-		É o processo de conversão de um objeto tipo objeto para um objeto tipo valor (primitivo), exemplo:
-
-		int x = 20;
-		Object obj = x;
-		int y = (int) obj;
-
-		O processo de Boxing é feito de forma implicita, já o processo de Unboxing é feito de forma explicita (com casting).
-
-	Wrapper classes
-
-		Para facilitar o processo de Boxing e Unboxing foram criadas as wrapper classes, elas são classes equivalentes aos tipos primitivos, segue tabela:
-
-		Tipo primitivo 			Wrapper classes
-
-		byte					Byte
-		short					Short
-		int						Integer
-		long					Long
-		float					Float
-		double					Double
-		char					Character
-		boolean					Boolean
-
-		Uso comum: campos de entidades em sistemas de informação, pois tipos referência (classes) aceitam valor null e usufruem dos recursos OO.
-
-		Atributos de classes devem ser declarados como Wrapper classes para boa prática, exemplo:
-
-		public class Product {
-			private String name;
-			private Double price;
-			private Integer quantity;
-			(...)
-
-		A wrappers classes podem ser utilizadas como se fosse um tipo primitivo normalmente, inclusive em calculos, exemplo:
-
-		Integer x = 10;
-		int y = x * 2;
-
-- Listas
-
-	Lista é uma estrutura de dados:
-
-		Homogênea (dados do mesmo tipo)
-		Ordenada (elementos acessados por meio de posições)
-		Inicia vazia, e seus elementos são alocados sob demanda
-		Cada elemento ocupa um "nó" (ou nodo) da lista
-		Não aceita tipos primitivos, somente classes
-
-	Seu tipo é o "List".
-
-	Podemos declarar um tipo como "List" porem não podemos instanciar devido a ser uma interface, a instanciação deve ser feita em uma de suas implementações.
-
-	Seguem algumas classes que implementam "List":
-
-		AbstractList, AbstractSequentialList, ArrayList, AttributeList, CopyOnWriteArrayList, FilteredList, LinkedList, ListBinding, ListExpression, ListProperty, ListPropertyBase, ModifiableObservableListBase, ObservableListBase, ReadOnlyListProperty, ReadOnlyListPropertyBase, ReadOnlyListWrapper, RoleList, RoleUnresolvedList, SimpleListProperty, SortedList, Stack, TransformationList, Vector
-
-	Vantagens:
-
-		Tamanho variável
-		Facilidade para se realizar inserções e deleções
-
-	Desvantagens:
-
-		Acesso sequencial aos elementos
-
-	Declaração:
-
-		List<tipo a ser guardado> <nome da lista> = new <implementação da lista><>();
-
-		List<String> list = new ArrayList<>();
-
-	Métodos:
-
-		size() - mostra o tamanho da lista
-		add(<elemento>) - adicionar elemento na ultima posição
-		add(<posição>, <elemento>) - adicionar elemento na posição desejada
-		remove(<elemento ou posição>) - remover elemento da lista
-		get(<posição>) - obter o elemento da posição
-		indexOf(<elemento>) - busca o primeiro elemento na lista com o valor desejado
-		lastIndexOf(<elemento>) - busca o ultimo elemento na lista com o valor desejado
-
-- Datas (versão Java v8 ou mais atual)
-
-	Boa prática geral "armazene horário UTC, mostre horário local"
-
-	Conceitos importantes:
-
-	Data-hora local:
-
-		ano-mês-dia-hora sem fuso horário
-		hora opcional
-
-	Data-hora global:
-
-		ano-mês-dia-hora com fuso horário
-
-	Duração:
-
-		tempo decorrido entre duas data-horas
-
-	Quando usar?
-
-	Data-hora local:
-
-		Quando o momento exato não interessa a pessoas de outro fuso horário. Uso comum: sistemas de região única.
-
-		Exemplos:
-
-		Data de nascimento: "15/06/2001"
-		Data-hora da venda: "13/08/2022 às 15:32"
-
-	Data-hora global:
-
-		Quando o momento exato interessa a pessoas de outro fuso horário. Uso comum: sistemas multi-região, web.
-
-		Exemplos:
-
-		Quando será o sorteio? "21/08/2022 às 20h (horário de São Paulo)"
-		Quando o comentário foi postado? "há 17 minutos (horário de São Paulo)"
-		Quando foi realizada a venda? "13/08/2022 às 15:32 (horário de São Paulo)"
-		Início e fim do evento? "21/08/2022 às 14h até 16h (horário de São Paulo)"
-
-	Timezone (fuso horário)
-
-		GMT - Greenwich Mean Time:
-
-			Horário de Londres
-			Horário do padrão UTC - Coordinated Universal Time
-			Também chamado de "Z" time, ou Zulu time
-
-		Outros fuso horários são relativos ao GMT/UTC:
-
-			São Paulo: GMT-3
-			Manaus: GMT-4
-			Portugal: GMT+1
-
-		Muitas linguagens/tecnologias usam nomes para as timezones:
-
-			"US/Pacific"
-			"America/Sao_Paulo"
-
-		Padrão ISO 8601 para gravação de hora em formato texto
-
-	Data-hora local:
-
-		<ano>-<mês>-<dia>T<hora>:<minuto>:<segundo>.<milesimos>
-
-		Exemplos:
-
-		2022-07-21
-		2022-07-21T14:52
-		2022-07-22T14:52:09
-		2022-07-22T14:52:09.4073
-
-	Data-hora global:
-
-		<ano>-<mês>-<dia>T<hora>:<minuto>:<segundo>.<milesimos>Z
-
-		Ou
-
-		<ano>-<mês>-<dia>T<hora>:<minuto>:<segundo>.<milesimos>-<diferença de fuso horario>
-
-		Exemplos:
-
-		2022-07-23T14:52:09Z
-		2022-07-23T14:52:09.254935Z
-		2022-07-23T14:52:09-03:00
-
-	Operações possiveis com data-hora
-
-		Instanciação:
-
-			(agora) > Data-hora
-			Texto ISO 8601 > Data-hora
-			Texto formato customizado > Data-hora
-			dia, mês, ano, [horário] > Data-hora local
-
-		Formatação:
-
-			Data-hora > Texto ISO 8601
-			Data-hora > Texto formato customizado
-
-		Converter data-hora global para local:
-
-			Data-hora global, timezone (sistema local) > Data-hora local
-
-		Obter dados de uma data-hora local:
-
-			Data-hora local > dia, mês, ano, horário
-
-		Cálculos com data-hora:
-
-			Data-hora +/- tempo > Data-hora
-			Data-hora 1, Data-hora 2 > Duração
-
-	Principais tipos
-
-		Data-hora local:
-
-			LocalDate
-			LocalDateTime
-
-		Data-hora global:
-
-			Instant
-
-		Duração:
-
-			Duration
-
-		Outros:
-
-			ZoneId
-			ChronoUnit
-
-	Declaração
-
-		Objetos LocalDate precisam importar  a classe "java.time.LocalDate".
-
-		Objetos LocalDateTime precisam importar  a classe "java.time.LocalDateTime".
-
-		Objetos Instant precisam importar  a classe "java.time.Instant".
-
-		Data-hora local:
-
-			LocalDate (somente data atual)
-
-				LocalDate <nome da variável> = new LocalDate.now();
-
-				Exemplo:
-
-				LocalDate date = new LocalDate.now();
-
-			LocalDate (somente data manual)
-
-				LocalDate <nome da variável> = new LocalDate.of(<data no formato ano, mes, dia>);
-
-				Exemplo:
-
-				LocalDate date = new LocalDate.of(2022, 07, 26);
-
-			LocalDateTime (data com horário atual)
-
-				LocalDateTime <nome da variável> = new LocalDateTime.now();
-
-				Exemplo:
-
-				LocalDateTime date = new LocalDateTime.now();
-
-			LocalDateTime (data com horário manual)
-
-				LocalDateTime <nome da variável> = new LocalDateTime.of(<data no formato ano, mes, dia, hora, minuto>);
-
-				Exemplo:
-
-				LocalDateTime date = new LocalDateTime.of(2022, 07, 26, 1, 30);
-
-		Data-hora global:
-
-			Instant (data com horário atual)
-
-				Instant <nome da variavel> = Instant.now();
-
-				Exemplo:
-
-				Instant date = Instant.now();
-
-			Instant (data com horário manual em EPOCH time - segundos)
-
-				Instant <nome da variavel> = Instant.ofEpochSecond(<data em EPOCH time - segundos>);
-
-				Exemplo:
-
-				Instant date = Instant.ofEpochSecond(1678449000);
-
-	Conversão data > texto
-
-		Para converter no formato padrão ISO 8601 basta utilizar o método "toString".
-
-		Exemplo:
-
-			System.out.println(data.toString());
-
-		Para converter em um formato "customizado" basta utilizar o método "format" do objeto de data passando como parametro um objeto "DateTimeFormatter".
-
-		Para utilizar este objeto precisamos importar a classe "java.time.format.DateTimeFormatter".
-
-		O objeto "DateTimeFormatter" determina a máscara utilizada para a conversão.
-
-		Exemplo:
-
-			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-			LocalDate date = LocalDate.now();
-			System.out.println(date.format(dtf));
-
-		Tambem podemos fazer o inverso, para converter em um formato "customizado" basta utilizar o método "format" do objeto "DateTimeFormatter" passando como parametro um objeto de data.
-
-		Exemplo:
-
-			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-			LocalDate date = LocalDate.now();
-			System.out.println(dtf.format(date));
-
-		Para formatar a partir de um Instant é necessario passar o timezone na criação do formatador e ao aplicar devemos fazer no modo inverso, aplicando o formatador a data.
-
-		O timezone pode ser o local com ".withZone(ZoneId.systemDefault());".
-
-		Exemplo:
-
-			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy").withZone(ZoneId.systemDefault());
-			Instant date = Instant.now();
-			System.out.println(dtf.format(date));
-
-		Existem diversos formatadores prontos na classe "DateTimeFormatter" que podem ser utilizados.
-
-		Exemplo:
-
-			DateTimeFormatter dtf = DateTimeFormatter.ISO_LOCAL_DATE;
-			DateTimeFormatter dtf = DateTimeFormatter.ISO_DATE_TIME;
-
-	Conversão texto (formato padrão) > data
-
-		Utilizar método "parse" das classes de data:
-
-			<classe de data> <nome da variavel> = <classe de data>.parse("<data no formato texto>");
-
-			Exemplos:
-
-			LocalDate date = LocalDate.parse("2022-07-20");
-			LocalDateTime date = LocalDateTime.parse("2022-07-20T01:30:26");
-			Instant date = Instant.parse("2022-07-20T01:30:26Z");
-
-		Conversão texto (formatos diferentes) > data
-
-			Para a conversao de um texto (em formatos diferentes) para uma data precisamos utilizar um formatador da classe "DateTimeFormatter", especificamente seu método "ofPattern".
-
-			Essa classe define formatos (máscaras) para conversão entre datas e texto, seu uso principal é para instanciar um objeto de data a partir de uma data em String.
-
-			É necessario importar a classe "java.time.format.DateTimeFormatter" para seu uso.
-
-			Funciona somente para LocalDate e LocalDateTime.
-
-			Exemplo de declaração:
-
-			DateTimeFormatter dtf;
-
-			Exemplo de instanciação:
-
-			dtf = DateTimeFormatter.ofPattern("<mascara>");
-
-			Podemos instanciar com diversas máscaras, por exemplo:
-
-			"dd/MM/yyyy"                   - 23/07/2018
-			"dd/MM/yyyy HH:mm:ss"          - 23/07/2018 15:42:07
-			"yyyy.MM.dd G 'at' HH:mm:ss z" - 2001.07.04 AD at 12:08:56 PDT
-			"EEE, MMM d, ''yy"             - Wed, Jul 4, '01
-			"h:mm a"                       - 12:08 PM
-			"hh 'o''clock' a, zzzz"        - 12 o'clock PM, Pacific Daylight Time
-			"K:mm a, z"                    - 0:08 PM, PDT
-			"yyyyy.MMMMM.dd GGG hh:mm aaa" - 02001.July.04 AD 12:08 PM
-			"EEE, d MMM yyyy HH:mm:ss Z"   - Wed, 4 Jul 2001 12:08:56 -0700
-			"yyMMddHHmmssZ"                - 010704120856-0700
-			"yyyy-MM-dd'T'HH:mm:ss.SSSZ"   - 2001-07-04T12:08:56.235-0700
-			"yyyy-MM-dd'T'HH:mm:ss.SSSXXX" - 2001-07-04T12:08:56.235-07:00
-			"YYYY-'W'ww-u"                 - 2001-W27-3
-
-			As máscaras são criadas a partir da tabela abaixo:
-
-			Symbol  Meaning                     Presentation      Examples
-
-			G       era                         text              AD; Anno Domini; A
-			u       year                        year              2004; 04
-			y       year-of-era                 year              2004; 04
-			D       day-of-year                 number            189
-			M/L     month-of-year               number/text       7; 07; Jul; July; J
-			d       day-of-month                number            10
-
-			Q/q     quarter-of-year             number/text       3; 03; Q3; 3rd quarter
-			Y       week-based-year             year              1996; 96
-			w       week-of-week-based-year     number            27
-			W       week-of-month               number            4
-			E       day-of-week                 text              Tue; Tuesday; T
-			e/c     localized day-of-week       number/text       2; 02; Tue; Tuesday; T
-			F       week-of-month               number            3
-
-			a       am-pm-of-day                text              PM
-			h       clock-hour-of-am-pm (1-12)  number            12
-			K       hour-of-am-pm (0-11)        number            0
-			k       clock-hour-of-am-pm (1-24)  number            0
-
-			H       hour-of-day (0-23)          number            0
-			m       minute-of-hour              number            30
-			s       second-of-minute            number            55
-			S       fraction-of-second          fraction          978
-			A       milli-of-day                number            1234
-			n       nano-of-second              number            987654321
-			N       nano-of-day                 number            1234000000
-
-			V       time-zone ID                zone-id           America/Los_Angeles; Z; -08:30
-			z       time-zone name              zone-name         Pacific Standard Time; PST
-			O       localized zone-offset       offset-O          GMT+8; GMT+08:00; UTC-08:00;
-			X       zone-offset 'Z' for zero    offset-X          Z; -08; -0830; -08:30; -083015; -08:30:15;
-			x       zone-offset                 offset-x          +0000; -08; -0830; -08:30; -083015; -08:30:15;
-			Z       zone-offset                 offset-Z          +0000; -0800; -08:00;
-
-		Criando um objeto de máscara de formatação:
-
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-
-		Aplicando um objeto de máscara de formatação:
-
-		Ele é aplicado quando utilizado o método "parse" das classes de data, cocando o objeto DateTimeFormatter como um segundo argumento no momento da conversão.
-
-		Exemplo:
-
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-		LocalDate date = LocalDate.parse("10/03/1979", dtf);
-		
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-		LocalDateTime date = LocalDateTime.parse("10/03/1979 11:55:47", dtf);
-
-	Convertendo data-hora global para local
-
-		Basta utilizar o método "ofInstant" informando como parametros o Instant e o zoneID.
-
-		Exemplo:
-
-		Instant instant = Instant.now();
-
-		LocalDate date = LocalDate.ofInstant(instant, ZoneId.systemDefault());
-		LocalDate date = LocalDate.ofInstant(instant, ZoneId.of("Portugal"));
-
-		System.out.println(date);
-
-	Extraindo informações de datas
-
-		Utilizar o método "get" dos objetos de data, conforme necessidade.
-
-		Objetos Instant nao possuem metodos get para hora devido ao UTC.
-
-		Objetos LocalDate e LocalDateTIme possuem métodos get para dias e horas.
-
-		Exemplo:
-
-		LocalDateTime date = LocalDateTime.parse("2022-07-20T01:30:26");
-		System.out.println("dia numero = " + date.getDayOfMonth());
-		System.out.println("mes numero = " + date.getMonthValue());
-		System.out.println("ano numero = " + date.getYear());
-		System.out.println("dia do ano juliano = " + date.getDayOfYear());
-		System.out.println("dia da semana texto = " + date.getDayOfWeek());
-		System.out.println("mes texto = " + date.getMonth());
-		System.out.println("hora = " + date.getHour());
-		System.out.println("minuto = " + date.getMinute());
-		System.out.println("segundo = " + date.getSecond());
-
-	Efetuando calculo com datas
-
-		Utilizar o método "plus" ou "minus" dos objetos de data, conforme necessidade, para adicionar ou subtrair periodos.
-
-		Para objetos LocalDate e LocalDateTime os métodos são iguais, apenas temos metodos extras em LocalDateTime para horas, minutos e segundos.
-
-		Exemplo:
-
-		LocalDateTime data = LocalDateTime.parse("2022-07-20T01:30:26");
-		LocalDateTime d01 = data.minusDays(7);
-		LocalDateTime d02 = data.plusDays(7);
-		LocalDateTime d03 = data.plusMonths(7);
-		LocalDateTime d04 = data.plusYears(7);
-		LocalDateTime d05 = data.plusHours(7);
-		LocalDateTime d06 = data.plusMinutes(7);
-		LocalDateTime d07 = data.plusSeconds(7);
-
-		Para objetos Instance temos métodos "plus" ou "minus" porem precisamos de um argumento extra "ChronoUnit".
-
-		Porem so temos métodos para dias, horas, minutos e segundos.
-
-		Exemplo:
-
-		Instant d14 = Instant.parse("2022-07-20T01:30:26Z");
-		Instant d15 = d14.minus(7, ChronoUnit.DAYS);
-		Instant d16 = d14.plus(7, ChronoUnit.DAYS);
-		Instant d19 = d14.plus(7, ChronoUnit.HOURS);
-		Instant d20 = d14.plus(7, ChronoUnit.MINUTES);
-		Instant d21 = d14.plus(7, ChronoUnit.SECONDS);
-
-		Para calcular a duração entre datas basta utilizar o método "between" da classe "Duration".
-
-		Só funciona com Instant ou LocalDateTime, para utilizar com LocalDate é necessaria conversao.
-
-		Exemplo:
-
-		Instant nascimento = Instant.parse("1979-03-10T11:50:00Z");
-		Instant hoje = Instant.now();
-		Duration periodo = Duration.between(nascimento, hoje);
-		System.out.println(periodo.toDays());
-
-- Datas (versão Java v7 ou mais antiga)
+- Datas
 
 	Classe "Date"
 
@@ -1846,7 +1723,7 @@
 
 		Calendar cal = Calendar.getInstance();
 
-		Temos diversos usos para essa classe.
+		Temos diversos usos para esa classe.
 
 		Atribuindo uma data ao calendario:
 
@@ -1858,21 +1735,7 @@
 
 		Adicionando ou subtraindo tempo a data do calendario:
 
-		cal.add(<o que será atribuido (verificar na documentação)>, <quantidade a ser atribuida ou subtraida com valor negativo>);	
-
-		Exemplo:
-
-		cal.add(Calendar.HOUR_OF_DAY, 4);
-
-		Obtendo undiades de tempo de um calendario:
-
-		cal.get(<o que será obtido (verificar na documentação)>);
-
-		Exemplo:
-
-		cal.get(Calendar.MINUTE);
-
-		cal.get(Calendar.MONTH);
+		cal.add(<o que será atribuido (verificar na documentação)>, <quantidade a ser atribuida ou subtraida com valor negativo>);
 
 - Enumerações
 
@@ -1891,7 +1754,7 @@
 		package entities.enums;
 
 		public enum <nome da enum> {
-			<itens da enum em letra maiuscula se preciso separar as palavras por _>,
+			<itens da enum em letra maiuscula>
 			...
 		}
 
@@ -1926,13 +1789,13 @@
 
 		status.PENDING_PAYMENT;
 
-	A conversão de String para enum é comum pois os sistemas podem informar os valores como String, devendo ser convertida utilizando o método "valueOf" da seguinte forma:
+	A conversão de String para enum é comum pois os sistemas podem informar os valores como String, devedo ser convertida da seguinte forma:
 
-		<nome da classe enum>.valueOf("<string>");
+		<nome da variavel enum>.valueOf("<string>");
 
 		Exemplo:
 
-		OrderStatus.valueOf("DELIVERED");
+		status.valueOf("DELIVERED");
 
 - Categorias de classes
 
@@ -2030,7 +1893,7 @@
 		Ao declarar a subclasse devemos inserir a palavra "extends" e o nome da superclasse a frente, por exemplo:
 
 		public class BusinessAccount extends Account {
-			...
+		...
 		}
 
 	Construtor
@@ -2054,7 +1917,7 @@
 
 		A relação entre a subclasse e a superclasse é "é-um".
 
-		Quando olhamos o diagrama UML da subclasse para a superclasse falamos que é uma generalização, quando olhamos o diagrama UML da superclasse para a subclasse falamos que é uma especialização.
+		Quando olhamos o diagrama UML da subclasse para a superclasse falamos que é uma generalização, quando olhamos o diagrama UML da superclasse para a subclasse falamos que é uma especialização .
 
 		A classe que recebe a herança é chamada de subclasse e a classe que ofere a herança é a superclasse.
 
@@ -2062,7 +1925,7 @@
 
 		Herança é uma associação entre classes (e não entre objetos).
 
-		O modificador "private" nos atributos da superclasse impede o acesso direto aos mesmos pela subclasse, temos duas formas de contornar essa situação, utilizando os métodos getters e setters da classe ou mudando o modificador para "protected".
+		O modificador "private" nos atributos da superclasse impede o acesso direto aos mesmos pela subclasse, temo sduas formas de contornar essa situação, utilizando os métodos geters e setters da classe ou mudando o modificador para "protected".
 
 - Upcasting e downcasting
 
@@ -2133,13 +1996,13 @@
 
 - Classes e métodos "final"
 
-	Para classes a palavra "final" define que aquela classe não pode ser herdada, a palavra deve ser inserida logo após o modificador de acesso, segue exemplo da declaração:
+	Para classes a palavra "final" define que aquela classe não pode ser herdada, a palavra eve ser inserida logo após o modificador de acesso, segue exemplo da declaração:
 
 		public final class <nome da classe> {
 		...
 		})
 
-	Para métodos a palavra "final" define que aquele método não pode ser sobrescrito, a palavra deve ser inserida logo após o modificador de acesso, segue exemplo da declaração:
+	Para métodos a palavra "final" define que aquele método não pode ser sobrescrito, a palavra eve ser inserida logo após o modificador de acesso, segue exemplo da declaração:
 
 		public final void <nome do método>() {
 		...
@@ -2189,7 +2052,7 @@
 
 	Na notação UML o nome da classe abstrata é escrito em itálico.
 
-	Principais usos de classes abstratas:
+	Principai susos de classes abstratas:
 
 	Reuso de código (herança)
 
@@ -2213,19 +2076,24 @@
 
 - Exceções
 
-	Uma exceção é qualquer condição de erro ou comportamento inesperado encontrado por um programa em execução.
+	Uma exceção é qualquer condição de erro ou comportamento inesperado / esperado encontrado por um programa em execução.
 
 	Em Java, uma exceção é um objeto herdado da classe, segue hierarquia básica:
 
 		java.lang.Throwable
 		    java.lang.Exception
-		    java.lang.RuntimeException
+		    	java.lang.RuntimeException
 
-	Erros da classe "java.lang.Exception" o compilador obriga a tratar ou propagar.
+	Erros da classe "java.lang.Exception" o compilador obriga a tratar ou propagar (exception "checked") pois são verificadas pelo compilador.
 
-	Erros da classe "java.lang.RuntimeException" compilador não obriga a tratar ou propagar.
+	Erros da classe "java.lang.RuntimeException" o compilador não obriga a tratar ou propagar (exception "unchecked").
 
 	Quando lançada, uma exceção é propagada na pilha de chamadas de métodos em execução, até que seja capturada (tratada) ou o programa seja encerrado.
+
+	Temos também uma hierarquia relacionada a erros que são lançados normalmente pela JVM, então não precisamos estudar a mesma.
+
+	java.lang.Throwable
+		    java.lang.Error
 
 	Por que exceções?
 
@@ -2325,6 +2193,12 @@
 			...
 		}
 
+		Podemps fazer uma multi propagação na mesma linha separando as exceções por virgula, exemplo:
+
+		public void updateDates(Date checkIn, Date checkOut) throws DomainException, RuntimeException {
+			...
+		}
+
 	Cláusula "throw"
 
 		Lança uma exceção, finalizando o método e devolvendo a exceção ao método que o chamou, por exemplo:
@@ -2377,7 +2251,7 @@
 
 	Bloco "try-with-resources"
 
-		É um bloco try que declara um ou mais recursos, e garante que esses recursos serão fechados ao final do bloco, sem a necessidade de fechar em um bloco finally.
+		É um bloco try que declara um ou mais recursos, e garante que esses recursos serão fechados ao final do bloco, sem a necessidade de fechar em um blco finally.
 
 		Declaração:
 
@@ -2400,22 +2274,172 @@
 
 		Desta forma evitamos criar um bloco finally que pode lançar exceções, por exemplo:
 
-		} finally {
-			
-			try {
-			
-				if (br != null) {
-					br.close();
+			} finally {
+				
+				try {
+				
+					if (br != null) {
+						br.close();
+					}
+					if (fr != null) {
+						fr.close();
+					}
+				
+				} catch (IOException e) {
+					e.printStackTrace();
 				}
-				if (fr != null) {
-					fr.close();
-				}
-			
-			} catch (IOException e) {
-				e.printStackTrace();
+				
 			}
+
+		Podemos usar qualquer classe no "try-with-resources" apenas implementando a interface "AutoCloseable", ela obriga a ser declarado o método "close()" para fechar os recursos abertos, exemplo:
+
+			@Override
+			public void close() {
+				System.out.println("Fechando conexao");
+			}
+
+	Capturando multiplas exceções com apenas um bloco
+
+		Podemos uitlizar o Java Multi-Catch para isso, criamos apenas um bloco catch e inserimos todas as execeções que podem ser lançadas separadando as mesma pelo operador lógico OU (|).
+
+		Exemplo:
+
+			try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			
+				String line = br.readLine();
+				
+				while (line != null) {
+					System.out.println(line);
+					line = br.readLine();
+				}
+				
+			} catch (IOException | NullPointerException | ArithmeticException e) {
+				System.out.println(e.getMessage());
+			}
+
+- Pacote "java.io"
+
+	Para trabalhar com fluxo de dados (entrada e saida) entre console, arquivos ou rede utilizamos classes do pacote "java.io".
+
+	Console ->                                                                  -> Console
+                                   _________________________
+	Arquivo -> Fluxo de entrada -> |       Aplicação        | -> Fluxo de saida -> Arquivo
+                                   | (desktop, web, mobile) |
+	Rede    ->                     |________________________|                   -> Rede
+
+	Fluxo básico de leitura de arquivo:
+
+		Criando fluxo concreto com arquivo (formato binario) -> Transformando os dados binarios para caracteres -> Efetuando leitura linha por linha
+
+		// Codigo com classes especificas
+		FileInputStream fis = new FileInputStream("arquivo.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		InputStreamReader isr = new InputStreamReader(fis);       // Transformando os dados binarios para caracteres
+		BufferedReader br = new BufferedReader(isr);              // Efetuando leitura linha por linha
+
+		// Codigo com classes genericas
+		InputStream is = new FileInputStream("arquivo.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		Reader r = new InputStreamReader(is);                // Transformando os dados binarios para caracteres
+		br = new BufferedReader(r);                          // Efetuando leitura linha por linha
+
+	Métodos:
+
+		br.readLine(); // Le uma linha do arquivo
+		br.close();    // Fecha todos os recursos abertos 
+
+	Exempo de código:
+
+		FileInputStream fis = new FileInputStream("lorem.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		InputStreamReader isr = new InputStreamReader(fis);     // Transformando os dados binarios para caracteres
+		BufferedReader br = new BufferedReader(isr);            // Efetuando leitura linha por linha
+		
+		String linha = br.readLine();
+		
+		System.out.println(linha);
+		
+		while (linha != null) {
+			System.out.println(linha);
+			linha = br.readLine();
 		}
+		
+		br.close();
+		
+		System.out.println();
+		
+		// Codigo com classes genericas
+		InputStream is = new FileInputStream("lorem.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		Reader r = new InputStreamReader(is);              // Transformando os dados binarios para caracteres
+		br = new BufferedReader(r);                        // Efetuando leitura linha por linha
+		
+		linha = br.readLine();
+		
+		System.out.println(linha);
+		
+		while (linha != null) {
+			System.out.println(linha);
+			linha = br.readLine();
+		}
+		
+		br.close();
+
+	Fluxo básico de gravação de arquivo:
+
+		Criando fluxo concreto com arquivo (formato binario) -> Transformando os dados caracteres para binarios -> Efetuando gravação linha por linha
+
+		// Codigo com classes especificas
+		FileOutputStream fos = new FileOutputStream("arquivo.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		OutputStreamWriter osw = new OutputStreamWriter(fos);       // Transformando os dados caracteres para binarios
+		BufferedWriter bw = new BufferedWriter(osw);                // Efetuando gravação linha por linha
+
+		// Codigo com classes genericas
+		OutputStream os = new FileOutputStream("arquivo.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		Writer w = new OutputStreamWriter(os);                 // Transformando os dados caracteres para binarios
+		bw = new BufferedWriter(w);                            // Efetuando gravação linha por linha
+
+	Métodos:
+
+		bw.write(<string>); // Grava a string no arquivo
+		bw.newLine();       // Quebra a linha
+		bw.close();         // Fecha todos os recursos abertos 
+
+	Exempo de código:
+
+		// Codigo com classes especificas
+		FileOutputStream fos = new FileOutputStream("lorem.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		OutputStreamWriter osw = new OutputStreamWriter(fos);     // Transformando os dados caracteres para binarios
+		BufferedWriter bw = new BufferedWriter(osw);              // Efetuando gravação linha por linha
+		
+		bw.write(<String>);
+		bw.newLine();
+		bw.newLine();
+		bw.write(<String>);
+		bw.newLine();
+		
+		bw.close();
+		
+		// Codigo com classes genericas
+		OutputStream os = new FileOutputStream("lorem.txt"); // Criando fluxo concreto com arquivo (formato binario)
+		Writer w = new OutputStreamWriter(os);               // Transformando os dados caracteres para binarios
+		bw = new BufferedWriter(w);                          // Efetuando gravação linha por linha
+		
+		bw.write(<String>);
+		bw.newLine();
+		bw.newLine();
+		bw.write(<String>);
+		bw.newLine();
+		
+		bw.close();	
+
+	Uma das razões para utilizarmos as classes genericas é o polimorfismo, que nos permite alterar a entrada e saida de dados, para console, arquivo ou rede com apenas a mudança de uma linha de código.
+
+	Exemplo:
+
+	Entrada por arquivo - InputStream is = new FileInputStream("lorem.txt");
+	Entrada pelo console - InputStream is = System.in;
+	Entrada pela rede - InputStream is = new Socket().getInputStream();
+
+	Saida por arquivo - OutputStream os = new FileOutputStream("lorem.txt");
+	Saida pelo console - OutputStream os = System.out;
+	Saida pela rede - OutputStream os = new Socket().getOutputStream();
 
 - Trabalhando com arquivos e pastas
 
@@ -2492,6 +2516,20 @@
 				
 			}
 
+		Lendo os dados no arquivo (com a classe Scanner, muito mais simples):
+
+			Para trabalhar com a leitura de arquivos de forma muito mais simples utilziamos a classe Scanner.
+
+			Utilizamos o método "sc.nextLine()" da classe Scanner para ler uma linha do arquivo.
+
+			Exemplo:
+
+			Scanner sc = new Scanner(new File("contas.csv"));	
+			while (sc.hasNextLine()) {
+				System.out.println(sc.nextLine());
+			}			
+			sc.close();
+
 		Gravando os dados no arquivo (com a classe BufferedWriter e FileWriter, alta performance):
 
 			Para trabalhar com a gravação de arquivos com uma performance maior utilizamos as classes FileWriter (stream de gravação de arquivo) e BufferedWriter (implementação de gravação de stream de arquivo com melhor performance).
@@ -2566,6 +2604,21 @@
 				}
 				
 			}
+
+		Gravando os dados no arquivo (com a classe PrintWriter, muito mais simples):
+
+			Para trabalhar com a gravação de arquivos de forma muito mais simples utilziamos a classe PrintWriter.
+
+			Utilizamos o método "println(<String>)" da classe PrintStream para gravar uma linha do arquivo.
+
+			Utilizamos o método "println()" da classe PrintStream para quebrar uma linha do arquivo.
+
+			Exemplo:
+
+			PrintWriter ps = new PrintWriter(<caminho do arquivo>);		
+			ps.println(<String>);
+			ps.println();
+			ps.close();
 
 	Gravação e leitura de pastas
 
@@ -2642,8 +2695,2561 @@
 
 	Métodos para arquivos
 
-		Caso seja instanciado um arquivo com a classe File podemos usar os métodos abaixo para coletar informações:
+		Caso seja instanciado um arquivo com a classe File podemso usar os métodos abaixo para coletar informações.
 
 		getName() - retorna o nome do arquivo
 		getParent() - retorna a pasta onde esta o arquivo
 		getPath() - retorna o caminho completo do arquivo
+
+- Interfaces
+
+	Interface é um tipo que define um conjunto de operações que uma classe deve implementar, ela estabelece um "contrato" que a classe que a implementar deve cumprir, declarando os métodos pendentes.
+
+	Na interface são declarados somente o cabeçalho dos métodos, a implementação fica a cargo das classes que a implementam.
+
+	Por exemplo:
+
+	interface <nome da interface> {
+		...
+		<tipo de retorno> <nome do método>();
+		...
+	}
+
+	interface Shape {
+		double area();
+		double perimeter();
+	}
+
+	Devemos utilizar interfaces para criar sistemas com baixo acoplamento e flexíveis.
+
+- Gerando arquivo JAR (exportando projeto)
+
+	Para enviar nosso projeto para outras pessoas utilizarem precisamos exportar o projeto no formato JAR.
+
+	Exemplo:
+
+	Clicar com o botão direito em cima do projeto a ser exportado e escolher a opção "Export"
+	No tipo a ser exportado escolha "Java" > "JAR File"
+	Marque somente a pasta "src"
+	Não marque a opção de exportar source files
+	Escolha o local
+	Clique em Finish
+
+- Importando JAR
+
+	Para importar um arquivo JAR gerado por outra pessoa devemos seguir os passos abaixo:
+
+	Criar uma pasta "lib" no projeto
+	Copiar o aqruivo JAR dentro desta pasta
+	Clicar com o botão direito em cima deste arquivo e selecionar a opção "Build path" > "Add to Build path"
+	o JAR sera carregado na pasta "Referenced Libraries" e suas classes poderão ser utilizadas
+
+- Gerando arquivo JAR executavel
+
+	Para tornar nosso projeto executavel para outras pessoas utilizarem precisamos exportar o projeto no formato JAR marcando qual a classe qu epossui o método main.
+
+	Exemplo:
+
+	Clicar com o botão direito em cima do projeto a ser exportado e escolher a opção "Export"
+	No tipo a ser exportado escolha "Java" > "JAR File"
+	Marque somente a pasta "src"
+	Não marque a opção de exportar source files
+	Escolha o local
+	Clique em Next
+	Clique em Next
+	No campo "Main class" selecione sua classe que possui o método main
+	Clique em Finish
+
+	Para executar o programa basta executar o comando abaixo:
+
+	java -jar <nome do arquivo .jar>
+
+- Inversão de controle
+
+	Padrão de desenvolvimento que consiste em retirar da classe a responsabilidade de instanciar suas dependências.
+
+	Por exemplo:
+
+	Consideremos a instanciação de objeto abaixo.
+
+	carRental = new CarRental(pickupDate, returnDate, new Vehicle(carModel));
+
+	Passamos no construtor a instanciação de um objeto como parametro "new Vehicle(carModel)", removendo da classe "CarRental" a necessidade de instanciar o objeto em seu construtor.
+
+- Injeção de dependência
+
+	É uma forma de realizar a inversão de controle: um componente externo instancia a dependência, que é então injetada no objeto "pai". Pode ser implementada de várias formas:
+
+	Construtor
+	Classe de instanciação (builder / factory)
+	Container / framework
+
+	Por exemplo:
+
+	Consideremos a instanciação de objeto abaixo.
+
+	carRental = new CarRental(pickupDate, returnDate, new Vehicle(carModel));
+
+	Estamos injetando uma dependencia no construtor com "new Vehicle(carModel)".
+
+- Herdar vs cumprir contrato
+
+	Aspectos em comum entre herança e interfaces:
+
+	Relação é-um
+	Generalização/especialização
+	Polimorfismo
+
+	Diferença fundamental:
+
+	Herança > reuso
+	Interface > contrato a ser cumprido
+
+- Herança múltipla e o problema do diamante
+
+	A herança múltipla pode gerar o problema do diamante: uma ambiguidade causada pela existência do mesmo método em mais de uma superclasse.
+
+	Herança múltipla não é permitida na maioria das linguagens!
+
+	Herança múltipla não é permitida na linguagem Java.
+
+- Interface Comparable
+
+	Quando queremos ordenar os dados de um objeto tipo lista utilizamos o método "sort" da classe "Collection", por exemplo (Collections.sort(salary);).
+
+	A comparação de variáveis de tipos primitivos é feita normalmente pois variaveis deste tipo possuem o valor real dentro delas e possuem somente um valor.
+
+	Porém para comparar objetos nao podemos utilizar o método "sort" padrão pois ele não sabe como comparar os objetos, ja que um objeto pode ter diversos parametros.
+
+	Para comparar objetos precisamos então implementar a interface "Comparable<tipo a ser comparado>", sendo que o tipo a ser comparado normalmente é a mesma classe.
+
+	Exemplo de declaração:
+
+	public class <nome da classe> implements Comparable<nome da classe> {
+		...
+	}
+
+	public class Employee implements Comparable<Employee> {
+		...
+	}
+
+	Implementando esta interface teremos de cumprir um contrato sobrescrevendo o método "compareTo".
+
+	Exemplo de declaração:
+
+	@Override
+	public int compareTo(<tipo a ser comparado> <nome do parametro>) {
+		return <variavel a ser comparada>.compareTo(nome do parametro.get<parametro ser comparado>());
+	}
+
+	@Override
+	public int compareTo(Employee other) {
+		return name.compareTo(other.getName());
+	}
+
+	Este método recebe como parametro o objeto a ser comparado com o objeto atual, e retorna um  número inteiro negativo, zero ou um inteiro positivo, sendo esse objeto menor, igual ou maior que o objeto comparado.
+
+- Default methods
+
+	A partir do Java 8, interfaces podem conter métodos concretos.
+
+	A intenção básica é prover implementação padrão para métodos, de modo a evitar:
+
+	Repetição de implementação em toda classe que implemente a interface
+	A necessidade de se criar classes abstratas para prover reuso da implementação
+
+	Outras vantagens:
+
+	Manter a retrocompatibilidade com sistemas existentes
+	Permitir que "interfaces funcionais" (que devem conter apenas um método) possam prover outras operações padrão reutilizáveis
+
+	Considerações importantes:
+
+	Agora as interfaces podem prover reuso
+	Agora temos uma forma de herança múltipla, mas o compilador reclama se houver mais de um método com a mesma assinatura, obrigando a sobrescreve-lo
+
+	Interfaces ainda são bem diferentes de classes abstratas. Interfaces não possuem recursos tais como construtores e atributos.
+
+	Declaração:
+
+	Dentro da interface declarar o método completo ao inves de sua assinatura somente, exemplo:
+
+	Antes:
+
+		package model.interfaces;
+
+		public interface InterestService {
+
+			Double getInterestRate();
+			Double payment(Double amount, Integer months);
+			
+		}
+
+	Depois:
+
+		package model.interfaces;
+
+		public interface InterestService {
+
+			Double getInterestRate();
+			
+			default Double payment(Double amount, Integer months) {
+				return amount * Math.pow((1 + getInterestRate() / 100), months);
+			}
+			
+		}
+
+	Um cuidado a ser tomado é que o método não pode usar nenhum tipo de variavel que seja de outra classe pois ele nao tem acesso, caso precise devemos utilizar declarar o método "get" na interface e sobrescrever na classe, conforme o exemplo.
+
+- Generics
+
+	Generics permitem que classes, interfaces e métodos possam ser parametrizados por tipo, desta forma podemos ter classes que trabalham com mais de um tipo, reduzindo a quantida de código no projeto.
+
+	Seus benefícios são:
+
+	Reuso
+	Type safety
+	Performance
+
+	O uso mais comum de generics é em listas.
+
+	Declaração de classe:
+
+		<modificador de acesso> class <nome da classe><T> {
+			...
+		}
+
+		Em seguida em todo lugar que o parametro deve ser utilizado colocamos a letra "T".
+
+		Exemplo:
+
+		public class PrintService<T> {
+
+			private List<T> list = new ArrayList<>();
+			
+			public void addValue(T value) {
+				list.add(value);
+			}
+			
+			public T first() {
+				return list.get(0);
+			}
+			
+		}
+
+	Declaração de classe com multiplos parametros de tipos genéricos:
+
+		Podemos utilizar a quantidade que quisermos de tipo generico, basta adicionar na declaração da classe separando por virgula, por exemplo:
+
+		<modificador de acesso> class <nome da classe><T, V> {
+			...
+		}
+
+	Declaração de método:
+
+		<modificador de acesso> <T> <tipo de retorno> <nome do método> (T <parametros>...) {
+			...
+		}
+
+		Inserimos "<T>" quando a classe não é declarada com tipo generico e sim padrão.
+
+	Declaração de método com mais de um tipo (multiplos):
+
+		Podemos utilizar a quantidade que quisermos de tipo generico, basta adicionar na declaração do método separando por virgula.
+
+		<modificador de acesso> <T, V> <tipo de retorno> <nome do método> (T <parametros>, V <parametros>...) {
+			...
+		}
+
+	Retornando tipos genericos em métodos:
+
+		Basta no tipo de retorno voce colocar a letra do tipo genérico, exemplo:
+
+		<modificador de acesso> <T> <tipo de retorno> <nome do método> (T <parametros>, V <parametros>...) {
+			...
+		}
+
+		public <T> T first(T item) {
+			return item;
+		}
+
+- Type Safety (segurança de tipos)
+
+	Type Safety (segurança de tipos) é a qualidade de fazer operações em dados apenas quando a operação faz sentido. Linguagens ditas type safety possuem mecanismos que impedem o código fazer o que pode dar errado por incompatibilidades entre tipos e uso de um tipo onde não pode. Geralmente impede uma compilação finalizar. É a linguagem que obriga o código respeitar os contratos estabelecidos.
+
+	Desta forma não é indicado declarar uma lista "List<object>" pois ela pode aceitar todo tipo de objeto, quebrando o programa na execução.
+
+- Genéricos delimitados (parâmetros de tipo limitado)
+
+	Pode haver momentos em que você deseja restringir os tipos que podem ser usados como argumentos de tipo em um tipo parametrizado. Por exemplo, um método que opera em números pode querer apenas aceitar instâncias de Number suas subclasses ou aceitar instâncias de Number suas superclasses. É para isso que servem os parâmetros de tipo limitado.
+
+	Para declarar um parâmetro de tipo limitado em subclasses, liste o nome do parâmetro de tipo, seguido pela palavra "extends", seguida por seu limite superior , que neste exemplo é Number.
+
+	Exemplo:
+
+		public <T extends Number> void inspect(T t){
+			...
+    	}
+
+    Para declarar um parâmetro de tipo limitado em superclasses, liste o nome do parâmetro de tipo, seguido pela palavra "super", seguida por seu limite inferior , que neste exemplo é Number.
+
+	Exemplo:
+
+		public <T super Number> void inspect(T t){
+			...
+    	}
+
+    Podemos delimitar por mais de um tipo utilizando o "&" na declaração da classe.
+
+    Exemplo:
+
+		public <T extends Number & Serializable> void inspect(T t){
+			...
+    	}
+
+- Tipos coringa (wildcard types)
+
+	O caractere de interrogação "?" é utilizado como coringa no caso de não soubermos o tipo a ser utilizado.
+
+	Exemplo:
+
+	List<Object> não é o supertipo de qualquer tipo de lista, por exemplo:
+
+	List<Object> myObjs = new ArrayList<Object>();
+	List<Integer> myNumbers = new ArrayList<Integer>();
+	myObjs = myNumbers; // Erro de compilação
+
+	O supertipo de qualquer tipo de lista é List<?> , este "?" é um tipo coringa, por exemplo:
+
+	List<?> myObjs = new ArrayList<Object>();
+	List<Integer> myNumbers = new ArrayList<Integer>();
+	myObjs = myNumbers;
+
+	Com tipos coringa podemos fazer métodos que recebem uma lista de tipo genérico, por exemplo:
+
+	public static void printList(List<?> list) {
+		...
+	}
+
+	Porem não podemos inserir nenhum item em uma lista criada a partir da caractere coringa pois o compilador não sabe se o tipo é compativel, exemplo:
+
+	public static void printList(List<?> list) {
+		list.add(3); // Erro de compilação pois não se a lista aceita um inteiro
+	}
+
+- Coringas delimitados (bounded wildcards)
+
+	Segue o mesmo principio dos genéricos delimitados porém aplicados ao tipo coringa.
+
+	Para declarar um tipo coringa de tipo limitado por subclasse, coloque o tipo coringa seguido pela palavra "extends", seguida por seu limite superior, por exemplo:
+
+	public static void printList(List<? extends Number> list) {
+		...
+	}
+
+	Para declarar um tipo coringa de tipo limitado por superclasse, coloque o tipo coringa seguido pela palavra "super", seguida por seu limite inferior, por exemplo:
+
+	public static void printList(List<? super Number> list) {
+		...
+	}
+
+- Princípio get/put
+
+	Covariância
+
+		É quando a operação de leitura de itens da lista é permitida porém de inserção de itens na lista não é permitida. Isso ocorre ao declarar uma lista de um tipo coringa com delimitador de subclasse, por exemplo:
+
+		List<Integer> intList = new ArrayList<Integer>();
+		intList.add(10);
+		intList.add(5);
+
+		List<? extends Number> list = intList;
+
+		Number x = list.get(0);
+
+		list.add(20); // Erro de compilacao pois não sabe se o valor que esta tentando adicionar é compativel com o tipo da lista
+
+	Contravariância
+
+		É quando a operação de leitura de itens da lista não é permitida porém de inserção de itens na lista é permitida. Isso ocorre ao declarar uma lista de um tipo coringa com delimitador de superclasse, por exemplo:
+
+		List<Object> myObjs = new ArrayList<Object>();
+		myObjs.add("Maria");
+		myObjs.add("Alex");
+
+		List<? super Number> myNums = myObjs;
+
+		myNums.add(10);
+		myNums.add(3.14);
+
+		Number x = myNums.get(0); // Erro de compilacao pois não sabe se o valor que esta tentando pegar é compativel com o tipo da variavel
+
+- HashCode e Equals
+
+	São operações da classe Object utilizadas para comparar se um objeto é igual a outro.
+
+	equals: lento, resposta 100%
+	hashCode: rápido, porém resposta positiva não é 100%
+
+	Tipos comuns (String, Date, Integer, Double, etc.) já possuem a implementação para essas operações. Classes personalizadas precisam sobrepô-las.
+
+	Equals - compara se o objeto é igual a outro, retornando true ou false.
+
+	HashCode - retorna um número inteiro representando um código gerado a partir das informações do objeto, se o hashCode de dois objetos for diferente, então os dois objetos são diferentes, se o hascode for igual dos dois objetos o ideal é validar em seguida com o equal.
+
+	Implementação:
+
+	Todas as IDEs possuem um template de implementação dos métodos equals e hashcode, porem segue abaixo um exemplo:
+
+		Hashcode
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(<variavel ou variaveis que serão analisadas>);
+		}
+
+		@Override
+		public int hashCode() {
+			return Objects.hash(email, name);
+		}
+
+		Equals
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			<tipo> other = (<tipo>) obj;
+			return Objects.equals(<variavel ou variaveis que serão analisadas>) && Objects.equals(<variavel ou variaveis que serão analisadas>);
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Client other = (Client) obj;
+			return Objects.equals(email, other.email) && Objects.equals(name, other.name);
+		}
+
+- Set<T>
+
+	O Set<T> é uma interface genérica que possue diversas implementações para uso, ele representa um conjunto de elementos (similar ao da Álgebra).
+
+	Detalhes:
+
+	Não admite repetições
+	Elementos não possuem posição
+	Acesso, inserção e remoção de elementos são rápidos
+	Oferece operações eficientes de conjunto: interseção, união, diferença.
+
+	Principais implementações:
+
+	HashSet - mais rápido (operações O(1) em tabela hash) e não ordenado
+	TreeSet - mais lento (operações O(log(n)) em árvore rubro-negra) e ordenado pelo compareTo do objeto (ou Comparator)
+	LinkedHashSet - velocidade intermediária e elementos na ordem em que são adicionados
+
+	Declaração:
+
+	Set<tipo do conjunto> <nome do conjunto> = new <tipo do Set><>();
+
+	Set<String> name = new HashSet<>();
+	Set<Integer> salary = new TreehSet<>();
+	Set<Product> product = new LinkedHashSet<>();
+
+	Métodos importantes:
+
+	add(obj) - adiciona objeto ao conjunto
+	remove(obj) - remove objeto do conjunto
+	contains(obj) - verifica se o conjunto contém o objeto baseado em equals e hashCode, se equals e hashCode não existir, é usada comparação de ponteiros
+	clear() - esvazia  o conjunto
+	size() - mostra o tamanho do conjunto
+	removeIf(predicate) - remove do conjunto todos os itens que atendam ao predicado lambda
+	addAll(other) - união: adiciona no conjunto os elementos do outro conjunto, sem repetição
+	retainAll(other) - interseção: remove do conjunto os elementos não contitos em other
+	removeAll(other) - diferença: remove do conjunto os elementos contidos em other
+
+	Como HashSet testa igualdade?
+
+	Se hashCode e equals estiverem implementados: Primeiro hashCode. Se der igual, usa equals para confirmar.
+	Se hashCode e equals NÃO estiverem implementados: Compara as referências (ponteiros) dos objetos.
+
+	Como TreeSet testa igualdade?
+
+	É utilizado o método "compareTo" da interface "Comparable", se classe não possuir esta implementação será apresentado erro.
+
+- Map<K,V>
+
+	O Map<K,V> é uma interface genérica que possue diversas implementações para uso, ele representa um conjunto de elementos de pares chave / valor.
+
+	Detalhes:
+
+	Não admite repetições do objeto chave
+	Os elementos são indexados pelo objeto chave (não possuem posição)
+	Acesso, inserção e remoção de elementos são rápidos
+
+	Principais implementações:
+
+	HashMap - mais rápido (operações O(1) em tabela hash) e não ordenado
+	TreeMap - mais lento (operações O(log(n)) em árvore rubro-negra) e ordenado pelo compareTo do objeto (ou Comparator)
+	LinkedHashMap - velocidade intermediária e elementos na ordem em que são adicionados
+
+	Declaração:
+
+	Map<<tipo da chave>, <tipo do valor>> <nome do conjunto>  = new <tipo do Map<>();
+
+	Map<Integer, String> name = new HashMap<>();
+	Map<Integer, Integer> salary = new TreehMap<>();
+	Map<Integer, Product> product = new LinkedHashMap<>();
+
+	Métodos importantes:
+
+	put(key, value) - adiciona objeto ao conjunto
+	remove(key) - remove objeto do conjunto
+	containsKey(key) - verifica se o conjunto contém o objeto baseado em equals e hashCode, se equals e hashCode não existir, é usada comparação de ponteiros
+	get(key) - retirna um objeto do conjunto
+	clear() - esvazia  o conjunto
+	size() - mostra o tamanho do conjunto
+	keySet() - retorna um Set<key>
+	values() - retorna um Collection<value>
+
+	Como HashSet testa igualdade?
+
+	Se hashCode e equals estiverem implementados: Primeiro hashCode. Se der igual, usa equals para confirmar.
+	Se hashCode e equals NÃO estiverem implementados: Compara as referências (ponteiros) dos objetos.
+
+	Como TreeSet testa igualdade?
+
+	É utilizado o método "compareTo" da interface "Comparable", se classe não possuir esta implementação será apresentado erro.
+
+- Comparator<T>
+
+	Uma ordenação de lista pode ser feita pelo método estatico "Collections.sort(<lista a ser ordenada>);" , porém para isso devemos implementar a interface "Comparable" nas classes a serem ordenadas.
+
+	Implementar uma interface "Comparable" em uma classe não é recomendado, pois para alterar os parametros de comparação deveremos alterar uma classe ja fechada para alterações, dificultando o processo e gerando possiveis falhas.
+
+	Como solução podemos criar uma classe de comparação que implementa a interface "Comparator<T>" removendo assim a lógica de comparação da classe, mantendo-a fechada.
+
+	Para ordenar a lista podemos então utilizar o método "<lista a ser ordenada>.sort(<comparator>)" do proprio objeto da lista, esse método recebe como argumento um objeto Comparator<T>.
+
+	Temos diversas formas de utilizar o Comparator<T>.
+
+	Comparator<T> objeto de classe separada:
+
+		Para isso criamos uma classe separada que implementa a classe Comparator<T> e sobrescreve o método "compare", exemplo abaixo:
+
+			package application;
+
+			import java.util.Comparator;
+
+			import model.entities.Product;
+
+			public class MyComparator implements Comparator<Product> {
+
+				@Override
+				public int compare(Product p1, Product p2) {
+					return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+				}
+
+			}
+
+		Em seguida chamamos o método "sort" da lista a ser ordenada passando um objeto da nossa classe Comparator<T> como argumento, exemplo abaixo:
+
+			list.sort(new MyComparator());
+
+	Comparator<T> objeto de classe anônima:
+
+		Ao invés de criarmos uma classe "normal" podemos criar uma classe anônima para otimizar código, exemplo abaixo:
+
+			Comparator<Product> comp = new Comparator<Product>() {
+				@Override
+				public int compare(Product p1, Product p2) {
+					return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+				}
+			};
+
+		Ela traz a implementação do Comparator<T> direto na declaração da variável.
+
+		Em seguida chamamos o método "sort" da lista a ser ordenada passando o objeto da nossa classe anônima Comparator<T> como argumento, exemplo abaixo:
+
+			list.sort(comp);
+
+	Comparator<T> objeto de expressão lambda com chaves:
+
+		Para maior otimização, ao invés de utilizar uma classe anônima podemos utilizar um método anônimo no formato de expressão lambda (com chaves), exemplo abaixo:
+
+			Comparator<Product> comp = (p1, p2) -> {
+				return p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+			};
+
+		No campo dos parênteses temos os argumentos, em seguida temos a flecha (arrow), a abertura de chaves, e por fim o que será executado no método, com a chave de fechamento.
+
+		Em seguida chamamos o método "sort" da lista a ser ordenada passando o objeto da nossa classe anônima Comparator<T> como argumento, exemplo abaixo:
+
+			list.sort(comp);
+
+	Comparator<T> objeto de expressão lambda sem chaves:
+
+		Similar a expressão lambda com chaves, mas para maior otimização ainda, quando temos uma expressão lambda de somente uma linha podemos descartar as chaves de abertura e fechamento e a palavra return, exemplo abaixo:
+
+			Comparator<Product> comp = (p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
+
+		Em seguida chamamos o método "sort" da lista a ser ordenada passando o objeto da nossa classe anônima Comparator<T> como argumento, exemplo abaixo:
+
+			list.sort(comp);
+
+	Comparator<T> expressão lambda "direto no argumento":
+
+		Por fim podemos otimizar de forma maior evitando a declaração da variável e inserindo a expressão lambda direto como argumento do método sorte, exemplo abaixo:
+
+			list.sort((p1, p2) -> p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
+
+- Programação funcional e cálculo lambda
+
+	Temos diversos paradigmas de programação:
+
+	Imperativo (C, Pascal, Fortran, Cobol)
+	Orientado a objetos (C++, Object Pascal, Java (< 8), C# (< 3))
+	Funcional (Haskell, Closure, Clean, Erlang)
+	Lógico (Prolog)
+	Multiparadigma (JavaScript, Java (8+), C# (3+), Ruby, Python, Go)
+
+	O paradigma funcional de programação é baseado no formalismo matemático Cálculo Lambda.
+
+	Tabela de comparação dos paradigmas imperativo e funcional:
+
+														Programação Imperativa 					Programação Funcional
+
+	Como se descreve algo a ser computado 				comandos ("como" - imperativa) 			expressões ("o quê" - declarativa)
+	Funções possuem transparência referencial 			fraco 									forte
+	(ausência de efeitos colaterais)
+	Objetos imutáveis 									raro 									comum
+	Funções são objetos de primeira ordem 				não 									sim
+	Expressividade / código conciso 					baixa 									alta
+	Tipagem dinâmica / inferência de tipos 				raro 									comum
+
+	Detalhes
+
+	Transparência referencial - uma função possui transparência referencial se seu resultado for sempre o mesmo para os mesmos dados de entrada. Benefícios: simplicidade e previsibilidade.
+
+	Funções são objetos de primeira ordem (ou primeira classe) - isso significa que funções podem, por exemplo, serem passadas como parâmetros de métodos, bem como retornadas como resultado de métodos.
+
+	Tipagem dinâmica / inferência de tipos - reconhecimento automático de tipos.
+
+	Expressividade / código conciso - código simples, em uma linha somente, bem claro.
+
+- Classe anonima
+
+	Quando criamos uma classe sem atributuos com somente um método para que seja instanciado e utilziado este método chamamos este objeto de "function object".
+
+	Esta nao é uma boa pratica no ponto de vista OO.
+
+	Exemplo:
+
+		// Declaração da classe
+		class NumeroDaContaComparator implements Comparator<Conta> {
+			@Override
+			public int compare(Conta c1, Conta c2) {
+				return Integer.compare(c1.getNumero(), c2.getNumero());
+			}
+		}
+
+		// Uso da classe
+		NumeroDaContaComparator comparator = new NumeroDaContaComparator(); 
+	    lista.sort(comparator);
+
+	O ideal seria utilizarmos uma classe anonima neste caso.
+
+	Ela descarta a criação da classe, cria um objeto da interface e coloca o método dentro do parametro.
+
+	Exemplo:
+
+		lista.sort(new Comparator<Conta>() {
+        	@Override
+        	public int compare(Conta c1, Conta c2) {
+        		return Integer.compare(c1.getNumero(), c2.getNumero());
+        	}
+        });
+
+    Podemos tambem criar a função anonima como uma variavel e passar ela como parametro, exemplo:
+
+    Comparator<Conta> variavel = new Comparator<Conta>() {
+    	@Override
+    	public int compare(Conta c1, Conta c2) {
+    		return Integer.compare(c1.getNumero(), c2.getNumero());
+    	}
+    };
+
+    lista.sort(variavel);
+
+    Porem esta é uma forma muito verbosa, para resolver este problema foram criadas as expressoes lambda.
+
+- Expressões lambda
+
+	Em programação funcional, expressão lambda corresponde a uma função anônima de primeira classe.
+
+	Para determinar uma expressao lambda utilziamos a seta -> .
+
+	Em sua estrutura temos:
+
+	(<parametros sem a classe>) -> <codigo a ser executado>
+
+	Esta expressa lambda é passada como parametro de um método, encaposulando o codigo da função.
+
+	Exemplo:
+
+		(c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero())
+
+		Uso aplicado como parametro:
+
+		lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
+
+	Tambem podemos criar uma expressão lambda, atribuir a uma variavel e passar esta variavel como parametro.
+
+	Exemplo:
+
+		Comparator<Conta> variavel = (Conta c1, Conta c2) -> {
+	    		return Integer.compare(c1.getNumero(), c2.getNumero());
+	    };
+
+	    lista.sort(variavel);
+
+
+
+- Interface funcional
+
+	É uma interface que possui um único método abstrato. Suas implementações serão tratadas como expressões lambda.
+
+	Um exemplo é a interface "Comparator".
+
+	Algumas outras interfaces funcionais comuns:
+
+	Predicate
+	Function
+	Consumer
+
+- Predicate (exemplo com removeIf)
+
+	Interface funcional com o método abstrato abaixo:
+
+	public interface Predicate<T> {
+		boolean test (T t);
+	}
+
+	Serve para testar algo e devolver um booleano.
+
+	Pode ser implementada de diversas formas:
+
+	Implementação da interface
+
+		Criar uma classe separada que implementa a interface Predicate e declarar o método abstrato conforme exemplo abaixo:
+
+			public class ProductPredicate implements Predicate<Product> {
+				@Override
+				public boolean test(Product p) {
+					return p.getPrice() >= 100.0;
+				}
+			}
+
+		Para utilizar instanciamos um objeto desta classe e passamos como argumento para o método RemoveIf conforme exemplo abaixo:
+
+			list.removeIf(new ProductPredicate());
+
+	Reference method com método estático
+
+		Não criar a classe separada e sim um método estatico na classe alvo conforme exemplo abaixo:
+
+			public static boolean staticProductPredicate(Product p) {
+				return p.getPrice() >= 100.0;
+			}
+
+		Para utilizar chamamos o método da classe diretamente no parametro do método RemoveIf conforme exemplo abaixo:
+
+			list.removeIf(Product::staticProductPredicate);
+
+	Reference method com método não estático
+
+		Não criar a classe separada e sim um método não estatico na classe alvo conforme exemplo abaixo:
+
+			public boolean nonStaticProductPredicate() {
+				return price >= 100.0;
+			}
+
+		Para utilizar chamamos o método da classe diretamente no parametro do método RemoveIf conforme exemplo abaixo:
+
+			list.removeIf(Product::nonStaticProductPredicate)
+
+	Expressão lambda declarada
+
+		Criar uma variavel Predicate com a expressão lambda conforme exemplo abaixo:
+
+			Predicate<Product> pred = p -> p.getPrice() >= 100.0;
+
+		Para utilizar passamos essa variavel criada como parametro do método RemoveIf conforme exemplo abaixo:
+
+			list.removeIf(pred);
+
+	Expressão lambda inline
+
+		Podemos passar diretamente a exmpressão lambda como parametro do método RemoveIf conforme exemplo abaixo:
+
+			list.removeIf(p -> p.getPrice() >= 100.0);
+
+- Consumer (exemplo com forEach)
+
+	Interface funcional com o método abstrato abaixo:
+
+	public interface Consumer<T> {
+		void accept(T t);
+	}
+
+	Serve para executar uma ação e não retornar nada.
+
+	Pode ser implementada de diversas formas, todas similares ao Predicate:
+
+	Implementação da interface
+	Reference method com método estático
+	Reference method com método não estático
+	Expressão lambda declarada
+	Expressão lambda inline
+
+- Function (exemplo com map)
+
+	A função "map" (não confunda com a estrutura de dados Map) é uma função que aplica uma função a todos elementos de uma stream.
+
+	Conversões:
+
+	List para stream: .stream()
+	Stream para List: .collect(Collectors.toList())
+
+	Interface funcional com o método abstrato abaixo:
+
+	public interface Function<T, R> {
+		R apply(T t);
+	}
+
+	Server para receber um objeto qualquer, extrair dados do mesmo e devolver essas informações em outro objeto.
+
+	Pode ser implementada de diversas formas:
+
+	Implementação da interface
+
+		Criar uma classe separada que implementa a interface Function e declarar o método abstrato conforme exemplo abaixo:
+
+			public class UpperCaseName implements Function<Product, String> {
+				@Override
+				public String apply(Product p) {
+					return p.getName().toUpperCase();
+				}
+			}
+
+		Para utilizar instanciamos um objeto de lista do tipo de retorno, usamos um stream e em seguida a função "map" que utiliza o objeto function, ao final utilizamos o collect para devolver a lista conforme exemplo abaixo:
+
+			List<String> names = list.stream().map(new UpperCaseName()).collect(Collectors.toList());
+
+	Reference method com método estático
+
+		Não criar a classe separada e sim um método estatico na classe alvo conforme exemplo abaixo:
+
+				public static String staticUpperCaseName(Product p) {
+					return p.getName().toUpperCase();
+				}
+	
+		Para utilizar chamamos o método da classe diretamente no parametro do método "map" conforme exemplo abaixo:
+
+			List<String> names = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
+
+	Reference method com método não estático
+
+		Não criar a classe separada e sim um método não estatico na classe alvo conforme exemplo abaixo:
+
+			public String nonStaticUpperCaseName() {
+				return name.toUpperCase();
+			}
+
+		Para utilizar chamamos o método da classe diretamente no parametro do método Map conforme exemplo abaixo:
+
+			List<String> names = list.stream().map(Product::nonStaticUpperCaseName).collect(Collectors.toList());
+
+	Expressão lambda declarada
+
+		Criar uma variavel Function com a expressão lambda conforme exemplo abaixo:
+
+			Function<Product, String> func = p -> p.getName().toUpperCase();
+
+		Para utilizar passamos essa variavel criada como parametro do método Map conforme exemplo abaixo:
+
+			List<String> names = list.stream().map(func).collect(Collectors.toList());
+
+	Expressão lambda inline
+
+		Podemos passar diretamente a exmpressão lambda como parametro do método Map conforme exemplo abaixo:
+
+			List<String> names = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+
+- Criando funções que recebem funções (interface funcional) como argumento
+
+	Nos argumentos do método inserimos um objeto da interface funcional, exemplo abaixo:
+
+		public double filteredSum(List<Product> list, Predicate<Product> criteria) {
+			...
+
+	Ao chamar este método passamos a expressão lambda como parâmetro, exemplo abaixo:
+
+		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
+
+- Stream
+
+	É uma sequencia de elementos advinda de uma fonte de dados que oferece suporte a "operações agregadas".
+
+	Fonte de dados
+
+		Coleção
+		Array
+		Função de iteração
+		Recurso de E/S
+
+	Características
+
+		Stream é uma solução para processar sequências de dados de forma:
+
+		Declarativa (iteração interna: escondida do programador)
+		Parallel-friendly (imutável -> thread safe)
+		Sem efeitos colaterais
+		Sob demanda (lazy evaluation)
+		Acesso sequencial (não há índices)
+		Single-use (só pode ser "usada" uma vez)
+		Pipeline (operações em streams retornam novas streams. Então é possível criar uma cadeia de operações (fluxo de processamento)).
+
+	Operações intermediárias e terminais
+
+	O pipeline é composto por zero ou mais operações intermediárias e uma terminal.
+
+		Operação intermediária:
+
+		Produz uma nova streams (encadeamento)
+		Só executa quando uma operação terminal é invocada (lazy evaluation)
+
+		Operação terminal:
+
+		Produz um objeto não-stream (coleção ou outro)
+		Determina o fim do processamento da stream
+
+	Operações intermediárias
+
+		filter
+		map
+		flatmap
+		peek
+		distinct
+		sorted
+		skip
+		limit (short-circuit, interrompe a stream ao atingir seu objetivo)
+
+	Operações terminais
+
+		forEach
+		forEachOrdered
+		toArray
+		reduce
+		collect
+		min
+		max
+		count
+		anyMatch (short-circuit, interrompe a stream ao atingir seu objetivo)
+		allMatch (short-circuit, interrompe a stream ao atingir seu objetivo)
+		noneMatch (short-circuit, interrompe a stream ao atingir seu objetivo)
+		findFirst (short-circuit, interrompe a stream ao atingir seu objetivo)
+		findAny (short-circuit, interrompe a stream ao atingir seu objetivo)
+
+	Criar uma stream
+
+		Basta chamar o método stream() ou parallelStream() a partir de qualquer objeto Collection.
+
+		Outras formas de se criar uma stream incluem:
+
+		Stream.of
+		Stream.ofNullable
+		Stream.iterate
+
+	Exemplos
+
+		Criando a partir de uma lista:
+
+			List<Integer> list = Arrays.asList(3, 4, 5, 10, 7);
+			Stream<Integer> st1 = list.stream().map(x -> x * 10);
+			System.out.println(Arrays.toString(st1.toArray()));
+
+			* Resultado: [30, 40, 50, 100, 70]
+
+		Criando diretamente:
+		
+			Stream<String> st2 = Stream.of("Maria", "Alex", "Bob");
+			System.out.println(Arrays.toString(st2.toArray()));
+
+			* Resultado: [Maria, Alex, Bob]
+
+		Criando no modo iterativo e imprimindo com limite:
+		
+			Stream<Integer> st3 = Stream.iterate(0,  x -> x + 2);
+			System.out.println(Arrays.toString(st3.limit(10).toArray()));
+
+			* Resultado: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+		Criando sequencia de Fibonnati no modo iterativo e imprimindo com limite:
+		
+			Stream<Long> st4 = Stream.iterate(
+					new Long[] {0L, 1L},
+					p -> new Long[] {p[1], p[0] + p[1]}).map(p -> p[0]);
+			System.out.println(Arrays.toString(st4.limit(10).toArray()));
+
+			* Resultado: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+- Pipeline
+
+	É a aplicação de operações sucessivas em um stream, exemplo abaixo:
+
+	List<Integer> newList = list.stream()
+		.filter(x -> x % 2 == 0)
+		.map(x -> x * 10)
+		.collect(Collectors.toList());
+	System.out.println(Arrays.toString(newList.toArray()));
+
+- Declaração basica de serialização
+
+	Declarar conforme padrão abaixo:
+
+	private static final long serialVersionUID = 1L;
+
+- JDBC (Java Database Connectivity)
+
+	O JDBC é a API padrão do Java para acesso a banco de dados.
+
+	Voce programa na aplicação java voltado para o JDBC, utilizando seus métodos, independente do banco de dados utilizado.
+
+	Depois, utilizando um driver (connector) especifico para o banco de dados desejado, o programa se comunica com o banco de dados.
+
+	Sendo assim voce programa de uma so forma o acesso a dados e os drivers se encarregam de traduzir para cada banco.
+
+- Configurar conexão do Java ao MySQL
+
+	É necessário baixar o " MySQL Java Connector" em "https://dev.mysql.com/downloads/connector/j/".
+
+	Baixar a versão ".zip" "Plataform Independent".
+
+	Extrair o arquivo compactado e copiar o arquivo "mysql-connector-java-<versão>.jar" em uma pasta qualquer do Eclipse.
+
+	Criar uma "User Library" no Eclipse:
+
+	Window -> Preferences -> Java -> Build path -> User Libraries
+	Dê o nome da "User Library" de "MySQL Connector"
+	Add external JARs -> localize o arquivo jar e insira
+
+	Ao criar um novo projeto no Eclipse, na segunda tela (Java Settings), clicar na aba "Libraries", clicar no "Modulepath", clicar em "Add library", selecionar "User Library" e adicinonar nossa biblioteca criada.
+
+- Configurar acesso ao banco de dados
+
+	Inicialmente temos de passar os dados de conexão com o banco.
+
+	Na pasta raiz do projeto, criar um arquivo "db.properties" contendo os dados de conexão:
+
+	user=<nome do usuário>
+	password=<senha>
+	dburl=jdbc:<caminho da database>
+	useSSL=false
+
+	Exemplo:
+
+	user=developer
+	password=123456
+	dburl=jdbc:mysql://localhost:3306/coursejdbc
+	useSSL=false
+
+	Como boa pratica devemos criar classes auxiliares de database para auxiliar no uso do banco de dados.
+
+	Criar um pacote "db" no projeto, ele irá conter nossas classes auxiliares.
+
+	Criar uma exceção personalizada "DbException" no pacote "db" com o seguinte conteúdo:
+
+		package db;
+
+		public class DbException extends RuntimeException {
+
+			private static final long serialVersionUID = 1L;
+			
+			public DbException(String message) {
+				super(message);
+			}
+			
+		}
+
+	Esta classe de exceção personalizada herda de "RuntimeException", desta forma não precisa de tratativa, podemos então lançar esta exceção para cada catch de SQLException.
+
+	Criar uma classe "Db" no pacote "db" com métodos estáticos auxiliares para obter e fechar uma conexão, statement e resultset com o banco, com o seguinte conteúdo:
+
+		package db;
+
+		import java.io.FileInputStream;
+		import java.io.IOException;
+		import java.sql.Connection;
+		import java.sql.DriverManager;
+		import java.sql.ResultSet;
+		import java.sql.SQLException;
+		import java.sql.Statement;
+		import java.util.Properties;
+
+		public class Db {
+			
+			private static Connection conn = null;
+			
+			public static Connection openConnection() {
+				if (conn == null) {
+					try {
+						Properties properties = loadProperties("db.properties");
+						String url = properties.getProperty("dburl");
+						conn = DriverManager.getConnection(url, properties);
+					} catch (SQLException e) {
+						throw new DbException(e.getMessage());
+					}
+				}
+				return conn;
+			}
+			
+			public static void closeConnection() {
+				if (conn != null) {
+					try {
+						conn.close();
+					} catch (SQLException e) {
+						throw new DbException(e.getMessage());
+					}
+				}
+			}
+			
+			public static void closeStatement(Statement st) {
+				if (st != null) {
+					try {
+						st.close();
+					} catch (SQLException e) {
+						throw new DbException(e.getMessage());
+					}
+				}
+			}
+			
+			public static void closeResultSet(ResultSet rs) {
+				if (rs != null) {
+					try {
+						rs.close();
+					} catch (SQLException e) {
+						throw new DbException(e.getMessage());
+					}
+				}
+			}
+
+			private static Properties loadProperties(String path) {
+				try (FileInputStream file = new FileInputStream(path)) {
+					Properties properties = new Properties();
+					properties.load(file);
+					return properties;
+				} catch (IOException e) {
+					throw new DbException(e.getMessage());
+				}
+			}
+
+		}
+
+	A classe "Db" possui métodos para abertura da conexão com o banco, encerramento da conexão com o banco, encerramento do objeto de statement, encerramento do objeto de resultset e um método para carregamento das propriedades do arquivo de conexão com o banco de dados.
+
+- Padrão de projeto DAO (Data Access Object)
+
+	O padrão de projeto DAO surgiu com a necessidade de separarmos a lógica de negócios da lógica de persistência de dados. Este padrão permite que possamos mudar a forma de persistência sem que isso influencie em nada na lógica de negócio, além de tornar nossas classes mais legíveis.
+
+	Classes DAO são responsáveis por trocar informações com o SGBD e fornecer operações CRUD e de pesquisas, elas devem ser capazes de buscar dados no banco e transformar esses em objetos ou lista de objetos, fazendo uso de listas genéricas, também deverão receber os objetos, converter em instruções SQL e mandar para o banco de dados.
+
+	Toda interação com a base de dados se dará através destas classes, nunca das classes de negócio, muito menos de formulários.
+
+	Se aplicarmos este padrão corretamente ele vai abstrair completamente o modo de busca e gravação dos dados, tornando isso transparente para aplicação e facilitando muito na hora de fazermos manutenção na aplicação ou migrarmos de banco de dados.
+
+	Também conseguimos centralizar a troca de dados com o SGBD (Sistema Gerenciador de Banco de Dados), teremos um ponto único de acesso a dados, tendo assim nossa aplicação um ótimo design orientado a objeto.
+
+	Para cada entidade do pacote "model.entities", haverá um objeto (interface) no pacote "model.dao" responsável por determinar os métodos de acesso a dados relacionado a esta entidade. Por exemplo:
+
+	Entidade "Department" -> Interface "DepartmentDao"
+	Entidade "Seller" -> Interface "SellerDao"
+
+	Nestas interfaces determinaremos todos os métodos "insert", "update", "delete" e "select" necessários a entidade.
+
+	Exemplo Interface "DepartmentDao":
+
+		package model.dao;
+
+		import java.util.List;
+
+		import model.entities.Department;
+		import model.entities.Seller;
+
+		public interface SellerDao {
+			
+			void insert(Seller obj);
+			void update(Seller obj);
+			void deleteById(Integer id);
+			Seller findById(Integer id);
+			List<Seller> findAll();
+			List<Seller> findByDepartment(Department department);
+
+		}
+
+	Exemplo Interface "SellerDao":
+
+		package model.dao;
+
+		import java.util.List;
+
+		import model.entities.Department;
+		import model.entities.Seller;
+
+		public interface SellerDao {
+			
+			void insert(Seller obj);
+			void update(Seller obj);
+			void deleteById(Integer id);
+			Seller findById(Integer id);
+			List<Seller> findAll();
+			List<Seller> findByDepartment(Department department);
+
+		}
+
+	A criação destes métodos será feita em classes separadas, no pacote "model.dao.imp", elas implementam a interface "...Dao" relacionada, por exemplo:
+
+	Classe "DepartmentDaoJDBC" -> Interface "DepartmentDao"
+	Classe "SellerDaoJDBC" -> Interface "SellerDao"
+
+	Colocamos o sufixo "JDBC" na classe pois é implementado o conector JDBC, caso fosse outro poderiamos alterar para algo mais apropriado.
+
+	Nestas classes estão toda a ´lógica de acesso ao banco de dados.
+
+	Exemplos de classes:
+
+	Classe "DepartmentDaoJDBC":
+
+		package model.dao.impl;
+
+		import java.sql.Connection;
+		import java.sql.PreparedStatement;
+		import java.sql.ResultSet;
+		import java.sql.SQLException;
+		import java.sql.Statement;
+		import java.util.ArrayList;
+		import java.util.List;
+
+		import db.Db;
+		import db.DbException;
+		import model.dao.DepartmentDao;
+		import model.entities.Department;
+
+		public class DepartmentDaoJDBC implements DepartmentDao {
+			
+			private Connection conn = null;
+			
+			public DepartmentDaoJDBC(Connection conn) {
+				this.conn = conn;
+			}
+
+			@Override
+			public void insert(Department obj) {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement("INSERT INTO department (Name) VALUES (?)",
+							Statement.RETURN_GENERATED_KEYS);
+					st.setString(1, obj.getName());
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						rs = st.getGeneratedKeys();
+						if (rs.next()) {
+							int id = rs.getInt(1);
+							obj.setId(id);
+							System.out.println("New departement Id: " + id + " created with success!");
+						}
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No department created!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public void update(Department obj) {
+				PreparedStatement st = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement("UPDATE department SET Name = ? WHERE Id = ?");
+					st.setString(1, obj.getName());
+					st.setInt(2, obj.getId());
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						System.out.println("Department Id: " + obj.getId() + " updated with success!");
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No department updated!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public void deleteById(Integer id) {
+				PreparedStatement st = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement("DELETE FROM department WHERE Id = ?");
+					st.setInt(1, id);
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						System.out.println("Department Id: " + id + " deleted with success!");
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No department deleted!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public Department findById(Integer id) {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					st = conn.prepareStatement("SELECT * FROM department WHERE Id = ? ORDER BY Name");
+					st.setInt(1, id);
+					rs = st.executeQuery();
+					if (rs.next()) {
+						Department d = instantiateDepartment(rs);
+						return d;
+					} else {
+						return null;
+					}
+				} catch (SQLException e) {
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public List<Department> findAll() {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					st = conn.prepareStatement("SELECT * FROM department ORDER BY Name");
+					rs = st.executeQuery();
+					List<Department> list = new ArrayList<>();
+					while (rs.next()) {
+						Department d = instantiateDepartment(rs);
+						list.add(d);
+					}
+					return list;
+				} catch (SQLException e) {
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+			
+			public Department instantiateDepartment(ResultSet rs) throws SQLException {
+				Department department = new Department(
+						rs.getInt("Id"),
+						rs.getString("Name"));
+				return department;
+			}
+
+		}
+
+	Classe "SellerDaoJDBC":
+
+		package model.dao.impl;
+
+		import java.sql.Connection;
+		import java.sql.PreparedStatement;
+		import java.sql.ResultSet;
+		import java.sql.SQLException;
+		import java.sql.Statement;
+		import java.util.ArrayList;
+		import java.util.HashMap;
+		import java.util.List;
+		import java.util.Map;
+
+		import db.Db;
+		import db.DbException;
+		import model.dao.SellerDao;
+		import model.entities.Department;
+		import model.entities.Seller;
+
+		public class SellerDaoJDBC implements SellerDao {
+			
+			private Connection conn = null;
+			
+			public SellerDaoJDBC(Connection conn) {
+				this.conn = conn;
+			}
+
+			@Override
+			public void insert(Seller obj) {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement(
+							"INSERT INTO seller "
+							+ "(Name, Email, BirthDate, BaseSalary, DepartmentId) "
+							+ "VALUES "
+							+ "(?, ?, ?, ?, ?)",
+							Statement.RETURN_GENERATED_KEYS);
+					st.setString(1, obj.getName());
+					st.setString(2, obj.getEmail());
+					st.setDate(3, new java.sql.Date(obj.getBirthDate().getTime()));
+					st.setDouble(4, obj.getBaseSalary());
+					st.setInt(5, obj.getDepartment().getId());
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						rs = st.getGeneratedKeys();
+						if (rs.next()) {
+							int id = rs.getInt(1);
+							obj.setId(id);
+							System.out.println("New seller Id: " + id + " created with success!");
+						}
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No seller created!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public void update(Seller obj) {
+				PreparedStatement st = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement(
+							"UPDATE seller "
+							+ "SET Name = ?, Email = ?, BirthDate = ?, BaseSalary = ?, DepartmentId = ? "
+							+ "WHERE Id = ?");
+					st.setString(1, obj.getName());
+					st.setString(2, obj.getEmail());
+					st.setDate(3, new java.sql.Date(obj.getBirthDate().getTime()));
+					st.setDouble(4, obj.getBaseSalary());
+					st.setInt(5, obj.getDepartment().getId());
+					st.setInt(6, obj.getId());
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						System.out.println("Seller Id: " + obj.getId() + " updated with success!");
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No seller updated!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public void deleteById(Integer id) {
+				PreparedStatement st = null;
+				try {
+					conn.setAutoCommit(false);
+					st = conn.prepareStatement("DELETE FROM seller WHERE Id = ?");
+					st.setInt(1, id);
+					int rowsAffected = st.executeUpdate();
+					conn.commit();
+					if (rowsAffected > 0) {
+						System.out.println("Seller Id: " + id + " deleted with success!");
+					} else {
+						try {
+							conn.rollback();
+						} catch (SQLException eRollback) {
+							throw new DbException(eRollback.getMessage());
+						}
+						throw new DbException("No seller deleted!");
+					}
+				} catch (SQLException e) {
+					try {
+						conn.rollback();
+					} catch (SQLException eRollback) {
+						throw new DbException(eRollback.getMessage());
+					}
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeStatement(st);
+				}
+				
+			}
+
+			@Override
+			public Seller findById(Integer id) {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					st = conn.prepareStatement(
+							"SELECT seller.*,department.Name as DepartmentName "
+							+ "FROM seller INNER JOIN department "
+							+ "ON seller.DepartmentId = department.Id "
+							+ "WHERE seller.Id = ?");
+					st.setInt(1, id);
+					rs = st.executeQuery();
+					if (rs.next()) {
+						Department d = instantiateDepartment(rs);
+						Seller s = instantiateSeller(rs, d);
+						return s;
+					} else {
+						return null;
+					}
+				} catch (SQLException e) {
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+
+			@Override
+			public List<Seller> findAll() {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					st = conn.prepareStatement(
+							"SELECT seller.*,department.Name as DepartmentName "
+							+ "FROM seller INNER JOIN department "
+							+ "ON seller.DepartmentId = department.Id "
+							+ "ORDER BY Name");
+					rs = st.executeQuery();
+					List<Seller> list = new ArrayList<>();
+					Map<Integer, Department> map = new HashMap<>();
+					while (rs.next()) {
+						Department d;
+						d = map.get(rs.getInt("DepartmentId"));
+						if (d == null) {
+							d = instantiateDepartment(rs);
+							map.put(rs.getInt("DepartmentId"), d);
+						}
+						Seller s = instantiateSeller(rs, d);
+						list.add(s);
+					}
+					return list;
+				} catch (SQLException e) {
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+			
+			@Override
+			public List<Seller> findByDepartment(Department department) {
+				PreparedStatement st = null;
+				ResultSet rs = null;
+				try {
+					st = conn.prepareStatement(
+							"SELECT seller.*,department.Name as DepartmentName "
+							+ "FROM seller INNER JOIN department "
+							+ "ON seller.DepartmentId = department.Id "
+							+ "WHERE DepartmentId = ? "
+							+ "ORDER BY Name");
+					st.setInt(1, department.getId());
+					rs = st.executeQuery();
+					List<Seller> list = new ArrayList<>();
+					Map<Integer, Department> map = new HashMap<>();
+					while (rs.next()) {
+						Department d;
+						d = map.get(rs.getInt("DepartmentId"));
+						if (d == null) {
+							d = instantiateDepartment(rs);
+							map.put(rs.getInt("DepartmentId"), d);
+						}		
+						Seller s = instantiateSeller(rs, d);
+						list.add(s);
+					}
+					return list;
+				} catch (SQLException e) {
+					throw new DbException(e.getMessage());
+				} finally {
+					Db.closeResultSet(rs);
+					Db.closeStatement(st);
+				}
+			}
+			
+			private Department instantiateDepartment(ResultSet rs) throws SQLException {
+				Department department = new Department(
+						rs.getInt("DepartmentId"),
+						rs.getString("DepartmentName"));
+				return department;
+			}
+			
+			private Seller instantiateSeller(ResultSet rs, Department department) throws SQLException {
+				Seller seller = new Seller(
+						rs.getInt("Id"),
+						rs.getString("Name"),
+						rs.getString("Email"),
+						rs.getDate("Birthdate"),
+						rs.getDouble("BaseSalary"),
+						department);
+				return seller;
+			}
+
+		}
+
+	Estas classes de acesso ao banco de dados não são instanciadas diretamente, para isso criamos uma classe no pacote "model.dao" com o nome de "DaoFactory" que é uma "fábrica" de Dao's.
+
+	Esta classe tem um método estático para cada classe "Dao", criando o seu objeto já abrindo a conexão.
+
+	Exemplo:
+
+		package model.dao;
+
+		import db.Db;
+		import model.dao.impl.DepartmentDaoJDBC;
+		import model.dao.impl.SellerDaoJDBC;
+
+		public class DaoFactory {
+
+			public static SellerDao createSellerDao() {
+				return new SellerDaoJDBC(Db.openConnection());
+			}
+			
+			public static DepartmentDao createDepartmentDao() {
+				return new DepartmentDaoJDBC(Db.openConnection());
+			}
+			
+		}
+
+	Neste momento temos as entidades, suas interfaces que determinam as ações do banco de dados, suas classes "Dao" que implementam estas ações e uma classe "factory" que instancia as classes necessarias.
+
+
+
+	Para finalizar basta executar as ações desejada no banco em uma classe "Program", ele instancia a interface "Dao" ao inves da classe que implementa as ações, ja atribuindo um valor executando o método estatico da classe "factory" relacionado a entidade desejada.
+
+	Exemplo abaixo:
+
+		package application;
+
+		import java.util.Date;
+		import java.util.List;
+
+		import model.dao.DaoFactory;
+		import model.dao.DepartmentDao;
+		import model.dao.SellerDao;
+		import model.entities.Department;
+		import model.entities.Seller;
+
+		public class Program {
+			public static void main(String[] args) {
+
+				SellerDao sellerDao = DaoFactory.createSellerDao();
+				Seller seller;
+				Department department;
+
+				System.out.println("----- Test 1: Seller findById -----");
+				seller = sellerDao.findById(3);
+				System.out.println(seller);
+				System.out.println();
+				
+				System.out.println("----- Test 2: Seller findByDepartment -----");
+				department = new Department(3, null);
+				List<Seller> listByDepartment = sellerDao.findByDepartment(department);
+				for (Seller s : listByDepartment) {
+					System.out.println(s);
+				}
+				System.out.println();
+				
+				System.out.println("----- Test 3: Seller findAll -----");
+				List<Seller> listAllSeller = sellerDao.findAll();
+				for (Seller s : listAllSeller) {
+					System.out.println(s);
+				}
+				System.out.println();
+				
+				System.out.println("----- Test 4: Seller insert -----");
+				Seller newSeller = new Seller(null, "Gregorio", "gregorio@gmail.com", new Date(), 4000.0, department);
+				sellerDao.insert(newSeller);
+				System.out.println();
+
+				System.out.println("----- Test 5: Seller update -----");
+				seller = sellerDao.findById(2);
+				seller.setName("Bolacha Nova");
+				seller.setEmail("bolachanova@gmail.com1");
+				seller.setBirthDate(new Date());
+				seller.setBaseSalary(10001.0);
+				seller.setDepartment(department);
+				sellerDao.update(seller);
+				System.out.println();
+				
+				System.out.println("----- Test 6: Seller delete -----");
+				sellerDao.deleteById(21);
+				System.out.println();
+				
+				DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+
+				System.out.println("----- Test 1: Department findAll -----");
+				List<Department> listAllDepartment = departmentDao.findAll();
+				for (Department d : listAllDepartment) {
+					System.out.println(d);
+				}
+				System.out.println();
+				
+				System.out.println("----- Test 2: Department findById -----");
+				department = departmentDao.findById(3);
+				System.out.println(department);
+				System.out.println();
+				
+				System.out.println("----- Test 3: Department deleteById -----");
+				departmentDao.deleteById(9);
+				System.out.println();
+				
+				System.out.println("----- Test 4: Department update -----");
+				department = departmentDao.findById(1);
+				department.setName("Xuxu");
+				departmentDao.update(department);
+				System.out.println();
+				
+				System.out.println("----- Test 5: Department insert -----");
+				department = new Department(null, "Fofinha");
+				departmentDao.insert(department);
+				System.out.println();
+				
+			}
+		}
+
+- Captura de exceções
+
+	Criamos um bloco "try- catch - finally" nas classes que implementam ações no banco de dados, de modo que, caso ocorra alguma falha será disparada uma exceção, visto que estamos acessando um recurso externo.
+
+- JDBC Utilização
+
+	APIs utilizadas:
+
+	PreparedStatement - onde é montada e executada a query SQL
+	ResultSet - representa um objeto com o resultado da consulta SQL (utilizando SELECT) retornada em forma de tabela
+
+	Métodos PreparedStatement:
+
+		prepareStatement(<query SQL>) - monta a query a ser executada
+		executeQuery() - executa uma query SELECT montada e devolve um ResultSet
+		executeUpdate() - executa uma query de INSERT, UPDATE e DELETE montada e devolve um inteiro com o numero de linhas afetadas
+		set<tipo>(<local do marcador>, <valor>) - determina os dados a serem inseridos nos marcadores de posição na query
+
+	Métodos ResultSet:
+
+		first() - move para posição 1, se houver
+		beforeFirst() - move para posição 0
+		next() - move para o próximo, retorna false se já estiver no último
+		absolute(int) - move para a posição dada
+		get<tipo>("<coluna da tabela>") - pega o valor de um item do ResultSet
+
+		* A primeira posição com dados é a posição 1, diferente de arrays que começam na posição 0
+
+	Observações gerais:
+
+	As queries podem ser dinamicas, composta por variaveis, desta forma utilizamos o marcador "?" no local onde vai uma variavel, por exemplo:
+
+		INSERT INTO seller (Name, Email, BirthDate, BaseSalary, DepartmentId) VALUES (?, ?, ?, ?)
+
+	Determinamos os dados desde marcadores com o método "set" de PreparedStatement da seguinte forma "set<tipo>(<local do marcador>, <valor>)", por exemplo:
+
+		st.setString(1, "Fernando Ribeira");
+		st.setString(2, "fernando@gmail.com");
+		st.setDouble(4, 3000.0);
+		st.setInt(5, 4);
+
+	Cuidado ao utilizar datas ao gravar no banco de dados, a classe utilizada deve ser "Date" mas do pacote "java.sql", por exemplo:
+
+		INSERT INTO seller BirthDate VALUES (?)
+		st.setDate(1, new java.sql.Date(sdf.parse("22/04/1985").getTime()));
+
+	Queries de SELECT retornam um ResultSet com os dados coletados, queries de INSERT, UPDATE e DELETE  devolvem um inteiro com o numero de linhas afetadas ao colocarmos "Statement.RETURN_GENERATED_KEYS" no final do comando PreparedStatement.
+
+		st = conn.prepareStatement("<query INSERT - UPDATE - DELETE a ser executada>", Statement.RETURN_GENERATED_KEYS);
+
+	Para verificarmos os dados de um ResultSet percorremos o mesmo com um "while" no seguinte formato:
+
+		rs = st.executeQuery();
+		while (rs.next()) {
+			System.out.println(rs.get<tipo>("<coluna da tabela>"));
+		}
+
+	O método "get" pega o dado baseado no seu tipo e nome da coluna, por exemplo:
+
+		rs.getInt("Id")
+		rs.getString("Name")
+
+	Obrigatoriamente devemor criar um bloco "try- catch - finally" que inicializa as variaveis de conexão, preparedstatment e resultset, e encerra essas variaveis ao final, de modo que, caso ocorra alguma falha será disparada uma exceção e as variaveis sejam encerradas, visto que estamos acessando um recurso externo.
+
+	Exemplo de código:
+
+		try {
+			...
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		} finally {
+		...
+			DB.closeResultSet(rs);
+			DB.closeStatement(st);
+			DB.closeConnection();
+		}
+
+- Transações e ACID
+	
+	Uma transação é uma sequência de operações executadas como uma única unidade lógica de trabalho.
+
+	ACID é um conceito que se refere às quatro propriedades de transação de um sistema de banco de dados: Atomicidade, Consistência, Isolamento e Durabilidade.
+
+	Atomicidade: Em uma transação envolvendo duas ou mais partes de informações discretas, ou a transação será executada totalmente ou não será executada, garantindo assim que as transações sejam atômicas.
+
+	Consistência: A transação cria um novo estado válido dos dados ou em caso de falha retorna todos os dados ao seu estado antes que a transação foi iniciada.
+
+	Isolamento: Uma transação em andamento mas ainda não validada deve permanecer isolada de qualquer outra operação, ou seja, garantimos que a transação não será interferida por nenhuma outra transação concorrente.
+
+	Durabilidade: Dados validados são registados pelo sistema de tal forma que mesmo no caso de uma falha e/ou reinício do sistema, os dados estão disponíveis em seu estado correto.
+
+	A especificação JDBC diz que, quando uma conexão é criada, ela está com o "Auto Commit" ativado.
+
+	Para evitarmos que uma transação seja interrompida e deixe os dados inconsistentes devemos desativar o "Auto Commit" e deixar o Commit ser feito pelo programador, assim como o rollback se necessário.
+
+	Para desativarmos o auto commit devemos executar o comando abaixo no objeto "Connection" utilizado:
+
+		setAutoCommit(false);
+
+	Para comitar ao final das transações devemos executar o comando abaixo no objeto Connection:
+
+		commit();
+
+	Para fazermos rollbackup caso algo de errado devemos executar o comando abaixo (normalmente em uma clausula catch) no objeto Connection:
+
+		rollback();
+
+- Visão geral do JavaFX e MVC
+
+	JavaFX é o sucessor do Swing e Java AWT para interfaces gráficas com Java.
+
+	JavaFX pode ser usado para desktop, web e mobile.
+
+	Uma tela JavaFX pode ser montada via código Java, ou via código FXML.
+
+	Com o lançamento do Java 11, JavaFX não é mais parte do JDK, ele precisa ser baixado e configurado separadamente, atualmente ela é mantido pela Gluon: https://gluonhq.com/products/javafx/
+
+	JavaFX é projetado sobre o padrão MVC:
+
+	Model - consiste nos dados de domínio e toda lógica de transformação desses dados
+	Views - São as telas de interação com o usuário (UI)
+	Controllers - São as classes responsáveis por tratar as interações do usuário com as views (manipulação de eventos de interação com as telas)
+
+	Existe uma hierarquia de objetos no JavaFX:
+
+	Stage
+		Scene
+			Node
+				Node
+				Node
+				...
+
+	Stage é o palco, a estrutura principal do programa.
+
+	Scene é uma cena (uma tela) que será adicionada ao palco.
+
+	Node são nós, objetos dentro das cenas.
+
+- Instalação do SceneBuilder
+
+	Acessar https://gluonhq.com/products/scene-builder/ e baixar a versão mais nova, instalação padrão.
+
+- JavaFX SDK
+
+	Necessário baixar o SDK em "https://gluonhq.com/products/javafx/".
+
+	Escolher o SDK da arquitetura e S.O. corretos.
+
+	Extrair o arquivo compactado e copiar a pasta gerada para a pasta de "libs" do usuário do Eclipse.
+
+	Criar uma "User Library" no Eclipse:
+
+	Window -> Preferences -> Java -> Build path -> User Libraries
+	Dê o nome da "User Library" de "JavaFX"
+	Add external JARs -> localize os arquivos jar na pasta "lib" e insira.
+
+	Ao criar um novo projeto no Eclipse, na segunda tela (Java Settings), clicar na aba "Libraries", clicar no "Modulepath", clicar em "Add library", selecionar "User Library" e adicinonar nossa biblioteca criada.
+
+- Configuração do Eclipse
+
+	Baixar o plugin "E(fx)clipse" versão 3.4.1 ou superior no "Eclipse Marketplace".
+
+	Configurar os paths do SceneBuilder e do JavaFX SDK nas configurações em "Window -> Preferences -> JavaFX".
+
+- Criação de projeto JavaFX
+
+	Criar um novo projeto do tipo JavaFX.
+
+	Ao criar um novo projeto no Eclipse, na segunda tela (Java Settings), clicar na aba "Libraries", clicar no "Modulepath", clicar em "Add library", selecionar "User Library" e adicinonar nossa biblioteca criada.
+
+	Apos o projeto ser criado configurar o projeto conforme descrito abaixo:
+
+	Botão direito no projeto -> Run As -> Run Configurations -> Arguments -> VM Arguments
+
+	Inserir a linha:
+
+	--module-path "<caminho da pasta lib do JavaFX JDK>"" --add-modules=javafx.fxml,javafx.controls
+
+	Por exemplo:
+
+	--module-path "C:\Users\Fernando\eclipse-workspace\libs\javafx-sdk-18.0.1\lib" --add-modules=javafx.fxml,javafx.controls
+
+- Estrutura básica de uma aplicação JavaFX
+
+	Uma aplicação JavaFX deve ter uma classe "Main" que extende de "Application" (javafx.application.Application).
+	
+	Esta herança possue alguns metodos, entre eles: init, start e stop.
+
+	O método "start" é abstrato e obrigatorio, nele esta o codigo da aplicação JavaFX.
+
+	O método "init" contempla codigo que deve ser executado antes da aplicação iniciar.
+
+	O método "stop" contempla código que deve ser executado assim que a aplicação finalizar.
+
+	O método "main" chama a aplicação executando o método estatico "launch" da classe "Application".
+
+	A lógica do JavaFX é um palco com cenas, no método "start" é passado como argumento o palco (criado automaticamente), em seguida é criado o objeto "BorderPane" que é o a borda do palco, em seguida criamos um objeto "Scene" que é a cena atrelada a borda, aplicamos um estilo CSS nesta cena, vinculamos a cena ao palco e por fim mostramos o palco.
+
+	Exemplo básico:
+
+		package application;
+	
+		import javafx.application.Application;
+		import javafx.stage.Stage;
+		import javafx.scene.Scene;
+		import javafx.scene.layout.BorderPane;
+
+		public class Main extends Application {
+			@Override
+			public void start(Stage primaryStage) {
+				try {
+					BorderPane root = new BorderPane();
+					Scene scene = new Scene(root,400,400);
+					scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+					primaryStage.setScene(scene);
+					primaryStage.show();
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+			
+			public static void main(String[] args) {
+				launch(args);
+			}
+		}
+
+
+	Este código esta em uma estrutura "try - catch" pois pode lançar uma exceção.
+
+- Arquivo FXML
+
+	São arquivos no formato XML das cenas, eles que possuem os componentes que serão mostrados.
+
+	Por exemplo:
+
+		<?xml version="1.0" encoding="UTF-8"?>
+
+		<?import javafx.scene.control.Button?>
+		<?import javafx.scene.control.Label?>
+		<?import javafx.scene.layout.AnchorPane?>
+
+		<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+		   <children>
+		      <Button layoutX="173.0" layoutY="172.0" mnemonicParsing="false" text="Botão" />
+		      <Label layoutX="163.0" layoutY="101.0" text="Clique aqui !" />
+		   </children>
+		</AnchorPane>
+
+	Por padrão o documento é criado no Eclipse e editado no SceneBuilder.
+
+	Precisamos apagar o arquivo "module-info.java" para evitar erro na execução do programa.
+
+	Para mostrar a cena utilizamos o código abaixo:
+
+		Parent parent = FXMLLoader.load(getClass().getResource("/gui/View.fxml"));
+		Scene scene = new Scene(parent);
+		stage.setScene(scene);
+		stage.show();
+
+	Declaramos um objeto do tipo "Parent" que receberá o caminho do arquivo FXML, em seguida adicionamos este objeto a uma cena, adiconamos a cena ao palco e exibimos o mesmo.
+
+- Carregando recursos
+
+	Recursos são arquivos ou imagens ou materiais de outros formatos.
+
+	O arquivo é carregado a partir do "classpath", não de um caminho do sistema de arquivos, buscando pelo recurso mesmo quando sua aplicação já estiver empacotada.
+
+	Exemplo:
+
+		getClass().getResource("<caminho do arquivo ou URL>")
+
+		getClass().getResource("/gui/View.fxml")
+
+	Este recurso é atribuido (carregado) em um objeto "Parent" do JavaFX pelo método estatico "FXMLLoader.load", por exemplo:
+
+		Parent parent = FXMLLoader.load(getClass().getResource("/gui/View.fxml"));
+
+- Tratando eventos com JavaFX
+
+	Temos os seguintes passos par atratativas de ecentos no JavaFX:
+
+	Crie uma classe controladora da sua view
+	No controlador:
+		Criar um atributo correspondente ao controle desejado e anotá-lo com @FXML
+		Criar um método para tratar o evento desejado do controle e anotá-lo com @FXML
+	Na view (Scene Builder):
+		Associar a view ao controller (aba Controller)
+		Selecione o controle e associe a ele o id (aba Code)
+		Selecione o controle e associe o método ao evento desejado (aba Code)
+
+	Passos detalhados:
+
+	Para tratar eventos precisamos criar uma classe "Controller" para cada arquivo FXML.
+
+	O nome da classe deve ser "<nome do arquivo FXML>Controller", por exemplo, "ViewController".
+
+	Este arquivo Controller deve estar na mesma pasta do arquivo FXML.
+
+	Em seu conteúdo devemos declarar cada elemento que executara uma ação como variavel com anotação "@FXML", por exemplo:
+
+		@FXML
+		private Button btnTest;
+
+	Vinculamos este Controller ao aquivo FXML no Scene Builder, primeiro selecionamos a cena no menu lateral esquerdo "Document", depois clicamos em "Controller" no menu lateral esquerdo, na caixa de selação combobox "Controller Class" selecionamos o arquivo correspondente.
+
+	Vinculamos os elementos com as variaveis, para isso devemos clicar no elemento desejado, em seguida no meni lateral esquerdo "Code" e no campo "fx:id" colocar o nome da variavel desejada.
+
+	Declaramos então os métodos de ações para os elementos, seguindo o padrão de ações do Scene Builder, estas informações aparecem ao clicar no elemento, em seguida clicar na aba "Code" no menu lateral direito do Scene Builder, existem diversas ações, a padrão é "On Action".
+
+	Desta forma declaramos um método com anotação "@FXML" relacionado ao elemento e a essa ação, seguindo a nomenclatura "on<nome do elemento><ação>", por exemplo:
+
+		@FXML
+		public void onBtnTestAction() {
+			...
+		}
+
+- Mostrando alertas
+
+	Criar uma classe utilitaria para mostrar o alerta, por exemplo:
+
+		package gui.util;
+
+		import javafx.scene.control.Alert;
+		import javafx.scene.control.Alert.AlertType;
+
+		public class Alerts {
+
+			public static void ShowALert(String title, String header, String content, AlertType type) {
+				Alert alert = new Alert(type);
+				alert.setTitle(title);
+				alert.setHeaderText(header);
+				alert.setContentText(content);
+				alert.show();
+			}
+			
+		}
+
+	Esta classe esta no pacote "gui.util" e possui um método estatico que mostra um alerta recebendo com paramentros o titulo, cabeçalho, corpo e tipo de alerta.
+
+	Para mostrar este alerta basta chamar o método com os parametros necessarios, exemplo abaixo:
+
+		Alerts.ShowALert("Alert title", "Alert header", "Alert content", AlertType.INFORMATION);
+
+	O tipo do alerta é um ENUM com os os tipos determinados de alertas.
+
+- Coletando e alterando texto de TextField
+
+	Utilizar o método "getText()" para coletar o texto.
+
+	Utilizar o método "setText()" para alterar o texto.
+
+	Os dados são em String, caso sejam utilizados para calculo devemos fazer o parse antes.
+
+- Alteração de texto em Label
+
+	Utilizar o método "setText()" para alterar o texto.
+
+	Os dados são em String, caso sejam utilizados numeros devemos utilizar "String.format" antes.
+
+- Constraints (limitações)
+
+	Normalmente desejamos limitar a inserção de dados, seja por tipo, quantidade ou outros fatores.
+
+	Por exemplo, em um campo de numero não podemos digitar letras, em um campo qualuqer devemos limitar a X caracteres.
+
+	Para isso criamos uma classe utilitaria "Constraints" com métodos estaticos que verificam o status dos campos apos cada modificação, permitindo ou não a modificação. Caso seja valida a modificação é feita, caso não seja valida o valor atual é mantido.
+
+	Para isso utilziamos a interface funcional "Initializable" com uma expressão lambda com o Regex necessário.
+
+	Exemplo de classe Constraints:
+
+		package gui.util;
+
+		import javafx.scene.control.TextField;
+
+		public class Constraints {
+
+			public static void setTextFieldInteger(TextField txt) {
+				txt.textProperty().addListener((obs, oldValue, newValue) -> {
+					if (newValue != null && !newValue.matches("\\d*")) {
+						txt.setText(oldValue);
+					}
+				});
+			}
+
+			public static void setTextFieldMaxLength(TextField txt, int max) {
+				txt.textProperty().addListener((obs, oldValue, newValue) -> {
+					if (newValue != null && newValue.length() > max) {
+						txt.setText(oldValue);
+					}
+				});
+			}
+
+			public static void setTextFieldDouble(TextField txt) {
+				txt.textProperty().addListener((obs, oldValue, newValue) -> {
+					if (newValue != null && !newValue.matches("\\d*([\\.]\\d*)?")) {
+						txt.setText(oldValue);
+					}
+				});
+			}
+
+		}
+
+	Exemplo de utilização da classe em uma controller de view:
+
+		public class ViewController implements Initializable {
+
+			@FXML
+			private TextField txtFirstNumber;
+			@FXML
+			private TextField txtSecondNumber;
+			@FXML
+			private Button btnCalculate;
+			@FXML
+			private Label lblResult;
+			
+			@FXML
+			public void onCalculateAction() {
+				try {
+					Locale.setDefault(Locale.US);
+					double firstNumber = Double.parseDouble(txtFirstNumber.getText());
+					double secondNumber = Double.parseDouble(txtSecondNumber.getText());
+					double result = firstNumber + secondNumber;
+					lblResult.setText(String.format("%.2f", result));
+				} catch (NumberFormatException e) {
+					Alerts.showAlert("Error", "Parse error", e.getMessage(), AlertType.ERROR);
+				}
+			}
+
+			@Override
+			public void initialize(URL url, ResourceBundle rb) {
+				Constraints.setTextFieldDouble(txtFirstNumber);
+				Constraints.setTextFieldDouble(txtSecondNumber);
+				Constraints.setTextFieldMaxLength(txtFirstNumber, 12);
+				Constraints.setTextFieldMaxLength(txtSecondNumber, 12);
+			}
+			
+		}
+
+	Ao implementar "Initializable" precisamos declara o método abstrato "initialize", ele sempre é executado ao instanciar a classe, aplciando assim as restrições nos campos.
+
+- Elemento ComboBox
+
+	Complexo, exemplo de uso:
+
+		public class ViewController implements Initializable {
+
+			@FXML
+			private ComboBox<Person> cbxPerson;
+			@FXML
+			private Button btnAll;
+			private ObservableList<Person> obsList;
+			
+			@FXML
+			public void onCbxPersonAction() {
+				Person person = cbxPerson.getSelectionModel().getSelectedItem();
+				System.out.println(person);
+			}
+			
+			@FXML
+			public void onBtnAllAction() {
+				for (Person person : cbxPerson.getItems()) {
+					System.out.println(person);
+				}
+			}
+
+			@Override
+			public void initialize(URL url, ResourceBundle rb) {
+
+				List<Person> list = new ArrayList<>();
+				list.add(new Person(1, "Maria", "maria@gmail.com"));
+				list.add(new Person(2, "Alex", "alex@gmail.com"));
+				list.add(new Person(3, "Bob", "bob@gmail.com"));
+
+				obsList = FXCollections.observableArrayList(list);
+				cbxPerson.setItems(obsList);
+
+				Callback<ListView<Person>, ListCell<Person>> factory = lv -> new ListCell<Person>() {
+					@Override
+					protected void updateItem(Person item, boolean empty) {
+						super.updateItem(item, empty);
+						setText(empty ? "" : item.getName());
+					}
+				};
+				
+				cbxPerson.setCellFactory(factory);
+				cbxPerson.setButtonCell(factory.call(null));
+			}
+
+		}
+
+- Containers JavaFX
+
+	São componentes especiais que servem para acomodar outros componentes para organizarmos as telas.
+
+	AnchorPane - container onde podemos "ancorar" elementos definindo as distancias manualmente, fixando a posição dos elementos mesmo com resize da tela.
+
+	GridPane - container em forma de grade (matriz de linhas e colunas), normalmente utilizado em formularios, é utilizado dentro de outros containers.
+
+	SplitPane - container dividido de forma horizontal ou vertical, ao criar ja coloca um AnchorPane em cada lado.
+
+	HBox & VBox - container facil de usar e com comportamento previsivel, colocando os componentes na sequencia, de forma horizontal ou vertical.
+
+	BorderPane - contaniner dividido em 5 partes, cima, direita, baxio, esquerda e centro.
+
+	ScrollPane - utilizado em conjunto de outros container, criando barras de rolagem horizontal ou vertical quando um componente não cabe na tela.
+
+- Visão geral sobre mapeamento objeto-relacional
+
+	Object-Relational Mapping (ORM), em português, mapeamento objeto-relacional, é uma técnica para aproximar o paradigma de desenvolvimento de aplicações orientadas a objetos ao paradigma do banco de dados relacional. O uso da técnica de mapeamento objeto-relacional é realizado através de um mapeador objeto-relacional que geralmente é a biblioteca ou framework que ajuda no mapeamento e uso do banco de dados.
+
+	Quando estamos trabalhando com aplicações orientadas a objetos que utilizam banco de dados relacionais para armazenamento de informações, temos um problema chamado impedância objeto-relacional devido às diferenças entre os 2 paradigmas.
+
+	O banco de dados relacional trabalha com tabelas e relações entre elas para representar modelos da vida real. Dentro das tabelas temos várias colunas e a unidade que temos para representação no modelo relacional é uma linha.
+
+	O paradigma orientado a objetos possui um modo um pouco diferente de trabalhar. Nele nós temos diversos elementos como classes, propriedades, visibilidade, herança e interfaces. A unidade quando falamos de orientação a objetos é o objeto que representa algo do mundo real, seja abstrato ou concreto.
+
+	As principais dificuldades que essas diferenças entre paradigmas causa:
+
+	Representação dos dados e do modelo, já que as estruturas são distintas.
+	Mapeamento entre os tipos de dados da linguagem de programação e do banco de dados.
+	Modelo de integridade relacional do banco relacional.
+
+	Pensando nos problemas descritos acima, o ORM define uma técnica para realizar a conciliação entre os 2 modelos. Uma das partes centrais é através do mapeamento de linhas para objetos.
+
+	As bibliotecas ou frameworks ORM definem o modo como os dados serão mapeados entre os ambientes, como serão acessados e gravados. Isso diminui o tempo de desenvolvimento, uma vez que não é necessário desenvolver toda essa parte. Outra vantagem está na adaptação de novos membros na equipe, como muitos projetos comerciais utilizam a mesma ferramenta, é possível encontrar membros que já estão acostumados com o padrão de trabalho.
+
+- JPA (Java Persistence API)
+
+	Java Persistence API (JPA) é a especificação padrão da plataforma Java EE (pacote javax.persistence) para mapeamento objeto-relacional e persistência de dados.
+
+	JPA é apenas uma especificação (documento), para trabalhar com JPA é preciso incluir no projeto uma implementação da API, por exemplo utilizando o Hibernate.
+
+- Principais classes:
+
+	EntityManager
+
+		Um objeto EntityManager encapsula uma conexão com a base de dados e serve para efetuar operações de acesso a dados (inserção, remoção, deleção, atualização) em entidades (clientes, produtos, pedidos, etc.) por ele monitoradas em um mesmo contexto de persistência.
+
+		Escopo: tipicamente mantem-se uma instância única de EntityManager para cada thread do sistema (no caso de aplicações web, para cada requisição ao sistema).
+
+	EntityManagerFactory
+
+		Um objeto EntityManagerFactory é utilizado para instanciar objetos EntityManager.
+
+		Escopo: tipicamente mantem-se uma instância única de EntityManagerFactory para toda aplicação.
+
+- Maven
+
+	Maven é um Projeto da Apache que tem como foco um gerenciamento de bibliotecas entre outras responsabilidades, ele permite constuir projetos, gerenciar dependencias, gerar documentações.
+
+	Criar um novo projeto Maven
+
+		File -> New -> Other -> Maven Project
+		Marcar Create Simple Project -> Next
+		Group Id: <nome do pacote da empresa>
+		Artifact Id: <nome do projeto>
+		Finish 
+
+	Atualize o Maven do projeto para a versão utilizada do Java
+
+		Edite o arquivo pom.xml
+		Inclua o conteúdo abaixo
+
+			<properties>
+				<maven.compiler.source>...<sua versão do Java vai aqui>...</maven.compiler.source>
+				<maven.compiler.target>...<sua versão do Java vai aqui>...</maven.compiler.target>
+			</properties>
+
+		Dê um "Maven -> Update Project" para que a alteração seja aplicada.
+
+	Inclua as dependências Maven a serem baixadas
+
+		Edite o arquivo pom.xml inserindo os dados das dependencias coleradas no site " https://mvnrepository.com", por exemplo:
+
+			<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-core</artifactId>
+				<version>5.4.12.Final</version>
+			</dependency>
+
+	Configure o JPA no seu projeto por meio do arquivo persistence.xml
+
+		Crie uma pasta "META-INF" a partir da pasta "src/main/resources"
+		Dentro da pasta META-INF crie um arquivo "persistence.xml"
+		Insira este conteúdo do arquivo persistence.xml: 
+
+			<?xml version="1.0" encoding="UTF-8"?>
+			<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+					http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" version="2.1">
+				<persistence-unit name="exemplo-jpa" transaction-type="RESOURCE_LOCAL">
+					<properties>
+						<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/aulajpa?useSSL=false&amp;serverTimezone=UTC" />
+						<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+						<property name="javax.persistence.jdbc.user" value="root" />
+						<property name="javax.persistence.jdbc.password" value="" />
+						<property name="hibernate.hbm2ddl.auto" value="update" />
+						<!-- https://docs.jboss.org/hibernate/orm/5.4/javadocs/org/hibernate/dialect/package-summary.html -->
+						<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
+					</properties>
+				</persistence-unit>
+			</persistence>
+
+		Altere as configurações de url, user e password conforme necessidade.
+
+	 Inclua os MAPEAMENTOS na classe de domínio
+
+	 	Basta inserir "@Entity" antes da declaração da classe.
+
+	 	Para definir a chave primária colocamos o código abaixo antes do campo que será a chave (normalmente "id").
+
+	 		@Id
+			@GeneratedValue(strategy=GenerationType.IDENTITY)
+
+		Segue exemplo:
+
+			@Entity
+			public class Pessoa {
+			
+				@Id
+				@GeneratedValue(strategy=GenerationType.IDENTITY)
+				private Integer id;
+
+- Gravando dados
+
+	Instanciar um "EntityManagerFactory", exemplo abaixo:
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("<nome do persistence-unit name>");
+
+	Instanciar um "EntityManager", exemplo abaixo:
+
+		EntityManager em = emf.createEntityManager();
+		
+	Iniciar a transação, exemplo abaixo:
+
+		em.getTransaction().begin();
+
+	Gravar no banco, exemplo abaixo:
+
+		em.persist(<objeto a ser gravado>);
+
+	Encerrar a transação, exemplo abaixo:
+
+		em.getTransaction().commit();
+
+	Encerrando os objetos "EntityManager", exemplo abaixo:
+
+		em.close();
+		emf.close();
+
+	Exemplo completo:
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("maven02");
+		EntityManager em = emf.createEntityManager();
+		em.getTransaction().begin();
+		em.persist(p1);
+		em.persist(p2);
+		em.persist(p3);
+		em.getTransaction().commit();
+		em.close();
+		emf.close();
+
+- Buscando dados por id
+
+	Criar o "EntityManagerFactory" e o "EntityManager", criar o objeto com o método "em.find()" para buscar o objeto, encerrar o "EntityManagerFactory" e o "EntityManager".
+
+	O método "em.find()" tem a seguinte estrutura:
+
+		<objeto> <variavel> = em.find(<classe>.class, <id a ser buscado)
+
+	Exemplo completo:
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("maven02");
+		EntityManager em = emf.createEntityManager();
+		
+		Pessoa p = em.find(Pessoa.class, 2);
+		System.out.println(p);
+		
+		em.close();
+		emf.close();
+
+- Remover dados por id
+
+	O processo de exclusão é similir ao de inclusão, porem utilizamos o método "em.remove" no lugar de "em.persist".
+
+	Exemplo completo abaixo:
+
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("maven02");
+		EntityManager em = emf.createEntityManager();
+		
+		em.getTransaction().begin();
+		Pessoa p = em.find(Pessoa.class, 2);
+		em.remove(p);
+		em.getTransaction().commit();
+		
+		em.close();
+		emf.close();
+		
+		System.out.println("Pronto!");
+
+	O JPA so consegue remover dados de entidades monitoradas, caso contrario sera apresentado erro.
+
+	Para isso devemos instanciar um objeto com o método "em.find" e em seguida enviar este objeto para exclusão.
+
+- NoSQL e MongoDB
+
+	Problema 1: incompatibilidade de impedância
+
+		Diferença entre o paradigma relacionado do banco de dados dos intens em disco e do paradigma orientado a objetos dos itens em memória, como solução podemos utiliar ORM porem temos degradação de performance.
+
+	Problema 2: grande volume de dados e acessos
+
+		A melhor escalabilidade de infra é horizontal, adiconando mais computadores ao cluster ao inves de aumentar a capacidade computacional de um unico equipamento. Porem os bancos relacionais não foram projetados para escalabilidade horizontal (cluster), tendo uma maior degradação de performance.
+
+	Solução para o problema: NoSQL
+
+		Suas primeiras influências surgiram em artigos do Google (BigTable) e da Amazon (Dynamo).
+
+		O nome NoSQL é acidental, ele foi utilizado como marcador da reunião que discutia o assunto e a acabou ficando como nome de referencia, embora não tenha um significado especifico.
+
+		Características mais comuns:
+
+		Não utilizam modelo relacional
+		Tem uma boa execução em clusters
+		Código aberto
+		Século XXI
+		Não tem esquema
+
+	Temos duas classes principais de bancos de dados NoSQL
+
+		Banco de dado orientado a agregados:
+
+			Modelo chave-valor (exemplo: Riak, Redis)
+			Modelo de documentos (exemplo: MongoDB, CouchDB)
+			Modelo família de colunas (exemplo: Cassandra, Apache HBase)
+
+		Banco de dados de grafos para dados com relacionamentos complexos (exemplo: Neo4j)
+
+	O que é Agregado?
+
+		É um conjunto de objetos relacionados que desejamos tratar como uma unidade, não normalizado, onde todos os dados necessários para quela transação estão no mesmo local, formando uma unidade.
+
+		Os dados frequentemente acessados estão em prioridade ao inves da normalização de tabelas.
+
+		Por exemplo, se buscarmos os dados de um pedido no modelo relacional acessaremos 6 tabelas diferentes para criar o pedido, em em modelo NoSQL o pedido seria gravado como uma unidade em formato JSON com todos os dados referentes ao mesmo, e coletariamos os dados em somente um acesso ao banco.
+
+	Por que o uso de agregados?
+
+		Resolvemos o problema 1 (incompatibilidade de impedância) pois podemos gravar no banco os dados como estão referenciados na memória, como um só item.
+
+		Resolvemos o problema 2 (grande volume de dados e acessos em cluster) pois os bancos NoSQL forem projetados para trabalharem neste formato. 
+
+		Ele já possui a estrutura de objetos associados.
+
+		É uma unidade natural de replicação e fragmentação pois todos os dados de um agregado estão armazenados juntos e no mesmo nodo do cluster.
+
+		Bancos NoSQL não suportam todo suporte ACID como bancos relacionais, mas garantem atomicidade no agregado.
+
