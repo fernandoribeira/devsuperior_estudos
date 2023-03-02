@@ -2792,6 +2792,8 @@
 
 	Estamos injetando uma dependencia no construtor com "new Vehicle(carModel)".
 
+	Não podemos deixar uma propria classe instanciar suas dependecias, eles devem ser recebidas via construtor.
+
 - Herdar vs cumprir contrato
 
 	Aspectos em comum entre herança e interfaces:
